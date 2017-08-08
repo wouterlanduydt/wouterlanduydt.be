@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="18px" viewBox="0 0 9 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="home" transform="translate(-898.000000, -30.000000)">
+            <g id="facebook" transform="translate(898.000000, 30.000000)">
+                <polygon id="Fill-1" fill="#000000" points="0.738328084 6.41274363 0.738328084 9.72052873 8.20429745 9.72052873 8.7785657 6.41274363"></polygon>
+                <polygon id="Clip-3" points="2.47686298 0.899398161 8.7785657 0.899398161 8.7785657 9.1692775 8.7785657 17.4391568 2.47686298 17.4391568"></polygon>
+                <path d="M2.47704454,4.23023499 L2.47704454,17.4391568 L5.9067423,17.4391568 L5.9067423,4.75885108 C5.9067423,4.39687404 6.1222737,4.20755357 6.48149272,4.20755357 L8.7785657,4.20755357 L8.7785657,0.899305584 L6.13336369,0.899305584 C2.38832467,0.899305584 2.47704454,3.79789924 2.47704454,4.23023499" id="Fill-2" fill="#000000"></path>
+            </g>
+        </g>
+    </g>
+</svg>

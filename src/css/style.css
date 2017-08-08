@@ -1,22 +1,66 @@
 @import 'reset';
 @import 'vars';
 
-html {
-  background-color: var(--bg-color);
-}
-
 body {
   font-family: Roboto;
   font-size: 1.6rem;
   margin: 2rem;
 }
 
-header {
-  margin: 2rem 0;
+a {
+  text-decoration: none;
 }
 
-h1 {
-  font-size: 3rem;
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+
+  &__title-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    display: inline;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    padding-bottom: .4rem;
+    border-bottom: .4rem solid black;
+  }
+
+}
+
+.main-nav {
+  margin-left: 4vw;
+
+  &__ul {
+    display: flex;
+  }
+
+  &__li {
+    margin-left: 2rem;
+  }
+
+  &__link {
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    color: black;
+  }
+
+}
+
+.socials {
+  display: flex;
+  align-items: flex-end;
+
+  &__li {
+    margin-left: 1rem;
+  }
+
 }
 
 .grid {
