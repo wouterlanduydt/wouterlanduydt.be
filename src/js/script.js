@@ -1,8 +1,4 @@
-
-
 const init = () => {
-
-  console.log(`Hello, portfolio`)
 
 };
 
