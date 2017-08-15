@@ -73,22 +73,30 @@ a {
   &__item {
     display: block;
     position: relative;
-    background-color: color(black a(.1));
     transition: all 300ms ease-out;
+    overflow: hidden;
 
     &:hover {
       scale: 1.02 1.02;
     }
 
     &:hover .grid__item__text {
-      opacity: .7;
-      border-radius: 1rem;
+      opacity: .9;
+    }
+
+    &:hover .grid__item__text__title {
+      top: 0;
+    }
+
+    &:hover .grid__item__text__tag {
+      top: 0;
     }
 
     &:hover .grid__item__image {
-      border-radius: 1.1rem;
-      box-shadow: 0 1.5rem 5rem -1rem rgba(0, 0, 0, .5);
-      /*filter: grayscale(100%);*/
+      filter: grayscale(1);
+      opacity: .1;
+      scale: 1.2 1.2;
+      transform: rotate(2deg);
     }
 
     &-2 {
@@ -121,7 +129,7 @@ a {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: all 300ms ease-out;
+    transition: all 500ms ease-out;
   }
 
   &__item__text {
@@ -136,11 +144,13 @@ a {
     left: 0;
     transition: all 300ms ease-out;
     opacity: 0;
-    background-color: black;
 
     &__title {
+      position: relative;
+      transition: all 250ms ease-out;
+      top: 1rem;
       text-transform: uppercase;
-      color: white;
+      color: black;
       font-weight: bold;
       font-size: 1.6rem;
       letter-spacing: .1rem;
@@ -148,8 +158,11 @@ a {
     }
 
     &__tag {
+      position: relative;
+      transition: all 250ms ease-out;
+      top: 2rem;
       text-transform: uppercase;
-      color: white;
+      color: black;
       font-size: 1.2rem;
     }
 
