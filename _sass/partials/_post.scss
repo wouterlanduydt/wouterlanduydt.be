@@ -1,0 +1,88 @@
+.post {
+
+  &-header {
+    margin-bottom: 1rem;
+
+    &-title {
+      font-size: 1.8rem;
+      font-weight: 800;
+    }
+
+    &-date {
+      font-size: .8rem;
+      text-transform: uppercase;
+      margin-top: .6rem;
+    }
+
+    &-img {
+      width: 100%;
+    }
+
+  }
+
+  &-info {
+    display: flex;
+    margin: 2.4rem 0 1.6rem;
+
+    :not(:last-child) {
+      margin-right: 2rem;
+    }
+
+    &-title {
+      font-size: 1.2rem;
+      font-weight: 800;
+    }
+
+    &-content {
+      text-transform: uppercase;
+      font-size: .9rem;
+      margin-top: .4rem;
+      line-height: 1.1rem;
+
+      &-link {
+        text-decoration: underline;
+      }
+
+    }
+
+  }
+
+  &-content {
+    display: flex;
+
+    &-text {
+      width: 50%;
+
+      :not(:last-child) {
+        margin-bottom: 1rem;
+      }
+
+      &-subtitle {
+        font-size: 1.1rem;
+        font-weight: 800;
+        line-height: 2.2rem;
+      }
+
+    }
+
+    &-media {
+      width: 50%;
+      padding-left: 2rem;
+
+      display: flex;
+      justify-content: space-between;
+
+      &-col {
+        width: 48%;
+      }
+
+      &-img {
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+
+    }
+
+  }
+
+}

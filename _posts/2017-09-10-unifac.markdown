@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "Students on Stage"
+date:   2017-06-10 00:00:00 +0200
+coverimage: /assets/images/previews/sos.jpg
+headerimage: /assets/images/headers/sos-header.jpg
+imagecol1:
+  - /assets/images/details/sos/sos-1.jpg
+  - /assets/images/details/sos/sos-2.jpg
+  - /assets/images/details/sos/sos-3.jpg
+imagecol2:
+  - /assets/images/details/sos/sos-4.jpg
+  - /assets/images/details/sos/sos-5.jpg
+summary: Unifac asked me to spike interest by possible sponsors for their Students on Stage festival.
+category: Web
+team:
+  - 'Wouter Landuydt'
+online: https://studentsonstage.unifac.be
+client: Unifac
+---
+
+<span class="post-content-text-subtitle" >Brief</span><br/>
+Create an attractive promosite for possible sponosors. After seing this site they need to be informed and convinced to sponsor the festival.
+
+<span class="post-content-text-subtitle" >Concept</span><br/>
+I got some pictures and the logo. Offcourse everything needed to be Unifac-themed, so I used their blue and a lot of whitespace.
+
+I designed the website in Sketch and we colaborated using Marvel. They commented on my designs and I uploaded a new version. Collaboration was quick and easy!
+
+To create the interactive parts in the website (like the image silder and contact panes) I used React.

@@ -1,0 +1,55 @@
+<footer class="footer">
+
+  <ul class='footer__socials'>
+
+    {% if site.socials.email %}
+    <li class='footer__socials__li'>
+      <a href="mailto:{{ site.socials.email }}">
+        <i class='fa fa-envelope-o'></i>
+      </a>
+    </li>
+    {% endif %}
+
+    {% if site.socials.linkedin %}
+    <li class='footer__socials__li'>
+      <a href="https://www.linkedin.com/in/{{ site.socials.linkedin }}" target="_blank">
+        <i class='fa fa-linkedin'></i>
+      </a>
+    </li>
+    {% endif %}
+
+    {% if site.socials.github %}
+    <li class='footer__socials__li'>
+      <a href="https://www.github.com/{{ site.socials.github }}" target="_blank">
+        <i class='fa fa-github'></i>
+      </a>
+    </li>
+    {% endif %}
+
+    {% if site.socials.vimeo %}
+    <li class='footer__socials__li'>
+      <a href="https://www.vimeo.com/{{ site.socials.vimeo }}" target="_blank">
+        <i class='fa fa-vimeo'></i>
+      </a>
+    </li>
+    {% endif %}
+
+    {% if site.socials.twitter %}
+    <li class='footer__socials__li'>
+      <a href="https://www.twitter.com/{{ site.socials.twitter }}" target="_blank">
+        <i class='fa fa-twitter'></i>
+      </a>
+    </li>
+    {% endif %}
+
+    {% if site.socials.instagram %}
+    <li class='footer__socials__li'>
+      <a href="https://www.instagram.com/{{ site.socials.instagram }}" target="_blank">
+        <i class='fa fa-instagram'></i>
+      </a>
+    </li>
+    {% endif %}
+
+  </ul>
+
+</footer>

@@ -1,0 +1,22 @@
+body {
+  font-family: 'Open Sans', 'Helvetica Nue';
+  margin: 0 auto;
+  color: $black;
+  line-height: 1.15rem;
+}
+
+a {
+  color: $black;
+  text-decoration: none;
+}
+
+.page-content {
+  margin: 0 auto;
+  max-width: 90vw;
+}
+
+.strong-bg {
+  background-color: $black;
+  color: white;
+  padding: 0 .3rem;
+}

@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "MSK"
+date:   2017-06-10 00:00:00 +0200
+coverimage: /assets/images/previews/msk.jpg
+headerimage: /assets/images/headers/msk-header.jpg
+imagecol1:
+  - /assets/images/details/msk/msk-1.jpg
+  - /assets/images/details/msk/msk-2.jpg
+  - /assets/images/details/msk/msk-3.jpg
+imagecol2:
+  - /assets/images/details/msk/msk-4.jpg
+  - /assets/images/details/msk/msk-5.jpg
+summary:
+category: Web
+team:
+  - 'Eva Baete'
+  - 'Ruuben Lambrechts'
+  - 'Wouter Landuydt'
+client: School
+---
+
+<span class="post-content-text-subtitle" >Brief</span><br/>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+
+<span class="post-content-text-subtitle" >Concept</span><br/>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum doloreLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore

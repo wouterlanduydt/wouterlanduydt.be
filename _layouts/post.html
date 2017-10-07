@@ -1,0 +1,94 @@
+---
+layout: default
+---
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-header-title" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="post-header-date">
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {% assign date_format = site.minima.date_format | default: "%b %Y" %}
+        {{ page.date | date: date_format }}
+      </time>
+  </header>
+
+  {% if page.headerimage %}
+    <img class="post-header-img" src="{{ page.headerimage }}" alt="">
+  {% endif %}
+
+  <dl class="post-info">
+
+    <div class="post-info-container">
+      {% if page.team %}
+        <dt class="post-info-title">Team</dt>
+        <dd class="post-info-content">
+          <ul class="post-info-team">
+            {% for member in page.team %}
+              <li class="post-info-team-member">{{member}}</li>
+            {% endfor %}
+          </ul>
+        </dd>
+      {% endif %}
+    </div>
+
+    <div class="post-info-container">
+      {% if page.category %}
+        <dt class="post-info-title">Category</dt>
+        <dd class="post-info-content">
+          {{ page.category }}
+        </dd>
+      {% endif %}
+    </div>
+
+    <div class="post-info-container">
+      {% if page.client %}
+        <dt class="post-info-title">Client</dt>
+        <dd class="post-info-content">
+          {{ page.client }}
+        </dd>
+      {% endif %}
+    </div>
+
+    <div class="post-info-container">
+      {% if page.online %}
+        <dt class="post-info-title">Online</dt>
+        <dd class="post-info-content">
+          <a class="post-info-content-link" href="{{ page.online }}" target="_blank">Watch me</a>
+        </dd>
+      {% endif %}
+    </div>
+
+  </dl>
+
+  <div class="post-content">
+    <div class="post-content-text" itemprop="articleBody">
+      {{ content }}
+    </div>
+
+    <div class="post-content-media">
+
+      {% if page.videourl %}
+        <iframe src="{{ page.videourl }}" width="100%" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      {% endif %}
+
+      {% if page.imagecol1 %}
+      <div class="post-content-media-col">
+        {% for image in page.imagecol1 %}
+          <img class="post-content-media-img" src="{{ image }}" alt="">
+        {% endfor %}
+      </div>
+      {% endif %}
+
+      {% if page.imagecol2 %}
+      <div class="post-content-media-col">
+        {% for image in page.imagecol2 %}
+          <img class="post-content-media-img" src="{{ image }}" alt="">
+        {% endfor %}
+      </div>
+      {% endif %}
+
+    </div>
+
+  </div>
+
+</article>

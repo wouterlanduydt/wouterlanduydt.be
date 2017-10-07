@@ -1,0 +1,29 @@
+---
+layout: post
+title:  "Tribute"
+date:   2017-03-30 00:00:00 +0200
+online: http://student.howest.be/wouter.landuydt/20162017/ma4/tribute/index.html
+coverimage: /assets/images/previews/tribute.jpg
+headerimage: /assets/images/headers/freddy-header.jpg
+imagecol1:
+  - /assets/images/details/freddy/freddy-1.jpg
+  - /assets/images/details/freddy/freddy-2.jpg
+  - /assets/images/details/freddy/freddy-3.jpg
+imagecol2:
+  - /assets/images/details/freddy/freddy-4.jpg
+  - /assets/images/details/freddy/freddy-5.jpg
+summary:
+category: Web
+team:
+  - 'Nele De Bruycker'
+  - 'Wouter Landuydt'
+client: School
+---
+
+<span class="post-content-text-subtitle" >Brief</span><br/>
+Nostalgie (a radio station in Belgium) wants to bring a music legend in the spotlight using a one page website. The website needs to be an experience and content needs to flow well.
+
+<span class="post-content-text-subtitle" >Concept</span><br/>
+We chose Freddy Mercury ...
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore

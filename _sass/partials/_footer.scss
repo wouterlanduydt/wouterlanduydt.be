@@ -1,0 +1,18 @@
+.footer {
+  margin: 2rem 0 1rem;
+
+  &__socials {
+    display: flex;
+    justify-content: center;
+
+    &__li:not(:first-child) {
+      margin-left: .8rem;
+    }
+
+    &__li i {
+      color: $black;
+    }
+
+  }
+
+}

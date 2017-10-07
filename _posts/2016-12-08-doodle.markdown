@@ -1,0 +1,20 @@
+---
+layout: post
+title:  "Google Doodle"
+date:   2016-12-08 00:00:00 +0200
+coverimage: /assets/images/previews/doodle.jpg
+headerimage: /assets/images/headers/doodle-header.gif
+summary:
+category: Motion
+team:
+  - 'Wouter Landuydt'
+client: School
+---
+
+<span class="post-content-text-subtitle" >Brief</span><br/>
+As a member of the Google motion design team, you get besides a big salary and free Kopi Luwak double espresso shots (what a bummer I don't drink coffee 😢) the chance to design a new Google Doodle! You pick an event or day in the future that has some meaning to you.
+
+<span class="post-content-text-subtitle" >Concept</span><br/>
+I choose the day of the firefighter. Mainly because I had a clear vision of what I wanted to animate and because it was just a few days after the deadline.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore

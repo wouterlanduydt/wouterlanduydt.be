@@ -1,0 +1,19 @@
+.about {
+
+  &-container {
+    display: flex;
+    margin-top: 4rem;
+  }
+
+  &-text {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-left: 2rem;
+  }
+
+  &-link {
+    font-weight: 600;
+    border-bottom: .2rem solid $black;
+  }
+
+}
