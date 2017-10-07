@@ -22,7 +22,11 @@
 
   &-info {
     display: flex;
-    margin: 2.4rem 0 1.6rem;
+    margin-bottom: 1.6rem;
+
+    &-container {
+      margin-top: 2rem;
+    }
 
     :not(:last-child) {
       margin-right: 2rem;

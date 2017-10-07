@@ -5,6 +5,12 @@
     margin-top: 4rem;
   }
 
+  &-img {
+    width: 20rem;
+    height: 20rem;
+    object-fit: contain;
+  }
+
   &-text {
     font-size: 1.4rem;
     line-height: 2rem;
