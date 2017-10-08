@@ -11,6 +11,7 @@ imagecol2:
   - /assets/images/details/kreun/kreun-3.jpg
   - /assets/images/details/kreun/kreun-4.jpg
 summary:
+online: https://projects.invisionapp.com/share/JU9S17JRG#/screens/211683729
 category: Cross Media Design
 team:
   - 'Wouter Landuydt'
