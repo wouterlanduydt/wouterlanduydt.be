@@ -13,13 +13,19 @@ imagecol2:
 summary:
 online: https://projects.invisionapp.com/share/JU9S17JRG#/screens/211683729
 category: Cross Media Design
-team:
-  - 'Wouter Landuydt'
 client: School
 ---
 
 <span class="post-content-text-subtitle" >Brief</span><br/>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+"De Kreun", a popular music venue in Kortrijk, wants a new website. Create a website that visually represents the vibe of De Kreun, which mostly attracts alternative people. This website has to be responsive for iPad and iPhone.
 
 <span class="post-content-text-subtitle" >Concept</span><br/>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum doloreLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+Their current website was really outdated and used a red color which was very confusing. Some text was in red and you could not make up if it was an error or important text. So I decided to change things up.
+
+I always thought that green was a great color for their "brand". So I went with the greenest green on the web, #00FFC8.
+
+Because they don't host that many events, I re-thought their calendar. In the desktop version, all the days of the month are on one line. Which makes it easy to determine when there is an event taking place.
+
+As decoration I used some sharp edged rectangles. This went well with the overall look and feel of the website.
+
+A few weeks later they changed their <a href="http://www.wildewesten.be/" target="_blank">website</a> and they used the same green as I did. Coincidence?

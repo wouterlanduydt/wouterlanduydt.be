@@ -18,8 +18,8 @@ layout: default
 
   <dl class="post-info">
 
+    {% if page.team %}
     <div class="post-info-container">
-      {% if page.team %}
         <dt class="post-info-title">Team</dt>
         <dd class="post-info-content">
           <ul class="post-info-team">
@@ -28,8 +28,8 @@ layout: default
             {% endfor %}
           </ul>
         </dd>
-      {% endif %}
     </div>
+    {% endif %}
 
     <div class="post-info-container">
       {% if page.category %}

@@ -5,10 +5,9 @@ date:   2017-05-09 00:00:00 +0200
 coverimage: /assets/images/previews/explain.jpg
 headerimage: /assets/images/headers/explain-header.jpg
 videourl: https://player.vimeo.com/video/234110391
+online: https://vimeo.com/234110391
 summary:
 category: Motion
-team:
-  - 'Wouter Landuydt'
 client: School
 ---
 
@@ -16,4 +15,3 @@ client: School
 A creative idea, the incredible investment idea, in short, -insert name here- is ready to launch the most succesful campaign ever. They count on your help to communicate their message to their 1000's of backers on Kickstarter. Create an explainer video that visualises their concept, filosofy and message. You choose an existing concept on Kickstarter that can use your help and bring your 2D version of their story.
 
 <span class="post-content-text-subtitle" >Concept</span><br/>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore

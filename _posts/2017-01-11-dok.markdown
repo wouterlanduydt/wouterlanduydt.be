@@ -14,8 +14,6 @@ imagecol2:
   - /assets/images/details/dok/dok-5.jpg
 summary:
 category: Web
-team:
-  - 'Wouter Landuydt'
 client: School
 ---
 
@@ -23,4 +21,3 @@ client: School
 DOK - workplace for entertainment and creative manoeuvres - wants a new website. DOK is thé place where the people of Ghent come to during summer to eat, drink, watch, do, think,... The people behind DOK organise concerts, DJ-sessions, expo's, movie nights,... Their new website needs to be humorous, summery and creative.
 
 <span class="post-content-text-subtitle" >Concept</span><br/>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore

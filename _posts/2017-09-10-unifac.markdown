@@ -13,8 +13,6 @@ imagecol2:
   - /assets/images/details/sos/sos-5.jpg
 summary: Unifac asked me to spike interest by possible sponsors for their Students on Stage festival.
 category: Web
-team:
-  - 'Wouter Landuydt'
 online: https://studentsonstage.unifac.be
 client: Unifac
 ---
