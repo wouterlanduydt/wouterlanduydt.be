@@ -17,7 +17,7 @@ team:
   - 'Eva Baete'
   - 'Ruuben Lambrechts'
   - 'Wouter Landuydt'
-client: School
+client: MSK - School
 ---
 
 <span class="post-content-text-subtitle" >Brief</span><br/>

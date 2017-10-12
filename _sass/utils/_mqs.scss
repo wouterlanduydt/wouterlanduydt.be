@@ -49,6 +49,10 @@
 
 @media (max-width: 640px) {
 
+  .page-content {
+    max-width: 95vw;
+  }
+
   .header {
     flex-direction: column;
     margin-bottom: 0;

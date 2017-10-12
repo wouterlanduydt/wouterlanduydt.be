@@ -25,4 +25,4 @@ I got some pictures and the logo. Offcourse everything needed to be Unifac-theme
 
 I designed the website in Sketch and we colaborated using Marvel. They commented on my designs and I uploaded a new version. Collaboration was quick and easy!
 
-To create the interactive parts in the website (like the image silder and contact panes) I used React.
+To create the interactive parts in the website (like an image silder and contact panes) I used React.
