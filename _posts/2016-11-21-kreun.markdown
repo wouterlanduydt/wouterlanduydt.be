@@ -17,15 +17,15 @@ client: School
 ---
 
 <span class="post-content-text-subtitle" >Brief</span><br/>
-"De Kreun", a popular music venue in Kortrijk, wants a new website. Create a website that visually represents the vibe of De Kreun, which mostly attracts alternative people. This website has to be responsive for iPad and iPhone.
+*"De Kreun"*, a popular music venue in Kortrijk, wants a new website. Create a website that visually represents the vibe of De Kreun, which mostly attracts *alternative people*. This website has to be responsive for iPad and iPhone.
 
 <span class="post-content-text-subtitle" >Concept</span><br/>
 Their current website was really outdated and used a red color which was very confusing. Some text was in red and you could not make up if it was an error or important text. So I decided to change things up.
 
-I always thought that green was a great color for their "brand". So I went with the greenest green on the web, #00FFC8.
+I always thought that green was a great color for their "brand". So I went with the greenest green on the web, *#00FFC8*.
 
-Because they don't host that many events, I re-thought their calendar. In the desktop version, all the days of the month are on one line. Which makes it easy to determine when there is an event taking place.
+Because they don't host that many events, I *re-thought* their calendar. In the desktop version, all the days of the month are on one line. Which makes it easy to determine when there is an event taking place.
 
-As decoration I used some sharp edged rectangles. This went well with the overall look and feel of the website.
+As decoration I used some *sharp edged rectangles*. This went well with the overall look and feel of the website.
 
-A few weeks later they changed their <a href="http://www.wildewesten.be/" target="_blank">website</a> and they used the same green as I did. Coincidence?
+A few weeks later they changed their *<a href="http://www.wildewesten.be/" target="_blank">website</a>* and they used the same green as I did. Coincidence?

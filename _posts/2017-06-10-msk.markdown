@@ -21,6 +21,13 @@ client: MSK - School
 ---
 
 <span class="post-content-text-subtitle" >Brief</span><br/>
-
+*MSK Ghent* was wondering why so many young people of Ghent were not coming to their museum. They only visit museums when they are abroad. So they gave us the task to come up with a solution for this. Off course it had to be *something digital*, but we could make a print campaign next to it as well.
 
 <span class="post-content-text-subtitle" >Concept</span><br/>
+We started by doing research in the streets of Ghent asking the people about the MSK and their interests in general. We started thinking how we could play with that.
+
+After a full week of *brainstorming* and looking for a good concept we found one. Our campaign is about making the young people aware good art is available just around the corner. We called it *"Don't look too far for culture"*, because it's just around the corner.
+
+On everyday objects we put that sentence to make people think going to the MSK gives them the *same feeling* as going on a trip.
+
+In addition to that, we made a *web application* that creates your perfect "trip" through the MSK. You have to choose 3 countries that you like the culture of, and the app calculates how much you would have to travel to see all of it. Luckily the MSK is just around the corner and you get a personalised tour to see the art you are interested in.

@@ -12,6 +12,13 @@ client: School
 ---
 
 <span class="post-content-text-subtitle" >Brief</span><br/>
-A creative idea, the incredible investment idea, in short, -insert name here- is ready to launch the most succesful campaign ever. They count on your help to communicate their message to their 1000's of backers on Kickstarter. Create an explainer video that visualises their concept, filosofy and message. You choose an existing concept on Kickstarter that can use your help and bring your 2D version of their story.
+A creative idea, the incredible investment idea, in short, -insert name here- is ready to launch the most succesful campaign ever. They count on your help to communicate their message to their 1000's of backers on *Kickstarter*.
+
+Create an *explainer video* that visualises their concept, filosofy and message. You choose an existing concept on Kickstarter that can use your help and bring your 2D version of their story.
 
 <span class="post-content-text-subtitle" >Concept</span><br/>
+This was my first real 2D animation project. I choose *<a href="http://www.offassignment.com/" target="_blank">Off Assignment's</a>* Kickstarter campaign, mainly because of their strong ambition. They want to bring real sotries to the people instead of weak fake stories you read on the internet these days.
+
+I went with this *monochrome style* because their message is to te point. Real stories. No nonsense and therefor a clean color pallette.
+
+With this project I learned a lot about how to keep my After Effects projects *organised*. It was also interesting to work on a project *from a-z*, from creating a script and storyboard until mixing audio from the voice actor and animating the frames.

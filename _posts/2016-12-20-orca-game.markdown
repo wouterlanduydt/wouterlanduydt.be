@@ -16,13 +16,13 @@ client: School
 ---
 
 <span class="post-content-text-subtitle" >Brief</span><br/>
-Create an endless game in phaser.js that becomes harder with time. The game has to include a leaderboard. Everything else we could make up ourselves.
+Create an *endless game* in phaser.js that becomes harder with time. The game has to include a leaderboard. Everything else we could make up ourselves.
 
 <span class="post-content-text-subtitle" >Concept</span><br/>
-First we made a game that you could play by pressing a displayed key on the keyboard. Monsters were coming at you and by pressing a shown key combo you could jump to avoid them. We really liked this way of interacting with the game.
+First we made a game that you could play by pressing a displayed *key combo* on the keyboard. Monsters were coming at you and by pressing the shown key combo you could jump to avoid them. We really liked this way of *interacting* with the game.
 
-But mid-project we needed to switch projects, just like in the real world. So we swapped out our keybord-monster game for an orca game. This game had some basic functionality in it. The orca could be controlled with the up and down keys to collect coins and avoid bad stuff.
+But mid-project we needed to *switch projects*, just like in the real world. So we swapped out our keybord-monster game for an orca game. This game had some basic functionality in it. The orca could be controlled with the up and down keys to collect coins and avoid bad stuff.
 
 We added some more functionality like an oxygen level, power ups and a leaderboard.
 
-This was the first time we really had to work on a development project together and we learned a lot about using Github.
+This was the first time we really had to work on a development project together and we learned a lot about using *Github*.

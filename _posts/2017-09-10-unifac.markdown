@@ -18,11 +18,11 @@ client: Unifac
 ---
 
 <span class="post-content-text-subtitle" >Brief</span><br/>
-Create an attractive promosite for possible sponosors. After seing this site they need to be informed and convinced to sponsor the festival.
+Create an *attractive promosite* for possible sponosors. After seing this site they need to be informed and *convinced to sponsor* the festival.
 
 <span class="post-content-text-subtitle" >Concept</span><br/>
-I got some pictures and the logo. Offcourse everything needed to be Unifac-themed, so I used their blue and a lot of whitespace.
+I got some pictures and the logo. Offcourse everything needed to be *Unifac-themed*, so I used their blue and a lot of whitespace.
 
-I designed the website in Sketch and we colaborated using Marvel. They commented on my designs and I uploaded a new version. Collaboration was quick and easy!
+I designed the website in Sketch and we colaborated using Marvel. They commented on my designs after I uploaded new versions. Collaboration was quick and easy!
 
-To create the interactive parts in the website (like an image silder and contact panes) I used React.
+To create the interactive parts in the website (like an image silder and contact panes) I used *React*.

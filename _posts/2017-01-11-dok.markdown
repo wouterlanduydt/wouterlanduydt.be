@@ -18,9 +18,9 @@ client: School
 ---
 
 <span class="post-content-text-subtitle" >Brief</span><br/>
-DOK - workplace for entertainment and creative manoeuvres - wants a new website. DOK is thé place where the people of Ghent come to during summer to eat, drink, watch, do, think,... The people behind DOK organise concerts, DJ-sessions, expo's, movie nights,... Their new website needs to be humorous, summery and creative.
+DOK - workplace for entertainment and creative manoeuvres - wants a new website. *DOK* is thé place where the people of Ghent come to *during summer* to eat, drink, watch, do, think,... The people behind DOK organise concerts, DJ-sessions, expo's, movie nights,... Their new website needs to be humorous, summery and creative.
 
 <span class="post-content-text-subtitle" >Concept</span><br/>
-I started with creating a mood- and styleboard, like almost every design project. I knew it would be a light-themed site with funny little scribbled elements. This represents the feeling of being at DOK.
+I started with creating a *mood- and styleboard*, like almost every design project. I knew it would be a light-themed site with funny little scribbled elements. This represents the feeling of being at DOK.
 
-The site itself contains 3 main colors to obtain simplicity. It's easy to navigate, the needed information is available on the homepage. And some subtile animations make the users happy.
+The site itself contains 3 main colors to obtain *simplicity*. It's easy to navigate, the needed information is available on the homepage, and I added some *subtile animations* make the users happy.
