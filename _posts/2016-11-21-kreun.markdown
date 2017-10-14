@@ -24,7 +24,7 @@ Their current website was really outdated and used a red color which was very co
 
 I always thought that green was a great color for their "brand". So I went with the greenest green on the web, *#00FFC8*.
 
-Because they don't host that many events, I *re-thought* their calendar. In the desktop version, all the days of the month are on one line. Which makes it easy to determine when there is an event taking place.
+Because they don't host that many events, I *re-thought* their calendar. In the desktop version, all the days of the month are on one line. This makes it easy to determine when there is an event taking place.
 
 As decoration I used some *sharp edged rectangles*. This went well with the overall look and feel of the website.
 

@@ -23,4 +23,4 @@ DOK - workplace for entertainment and creative manoeuvres - wants a new website.
 <span class="post-content-text-subtitle" >Concept</span><br/>
 I started with creating a *mood- and styleboard*, like almost every design project. I knew it would be a light-themed site with funny little scribbled elements. This represents the feeling of being at DOK.
 
-The site itself contains 3 main colors to obtain *simplicity*. It's easy to navigate, the needed information is available on the homepage, and I added some *subtile animations* make the users happy.
+The site itself contains 3 main colors to obtain *simplicity*. It's easy to navigate, the needed information is available on the homepage, and I added some *subtile animations* to make the users happy.
