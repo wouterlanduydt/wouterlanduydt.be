@@ -21,11 +21,11 @@ client: School
 ---
 
 <span class="post-content-text-subtitle" >Brief</span><br/>
-Nostalgie (a radio station in Belgium) wants to bring a music legend in the spotlight using a one page website. The website needs to be an experience and content needs to flow well.
+Nostalgie (a radio station in Belgium) wants to bring a music legend in the spotlight using a *one page website*. The website needs to be an experience and content needs to flow well.
 
 <span class="post-content-text-subtitle" >Concept</span><br/>
-We chose Freddy Mercury, because we felt like there was much to discover about him. While I created the wireframes for mobile and desktop, Nele mainly focussed on the visual design.
+We chose *Freddy Mercury*, because we felt like there was much to discover about him. While I created the wireframes for mobile and desktop, Nele mainly focussed on the visual design.
 
-When we were thinking about what content to display on the site we started looking on the internet. We found out there were many special quotes about him, by himself and people who worked with him. We descided to explain his life and specialities with quotes.
+When we were thinking about what content to display on the site we started looking on the internet. We found out there were many *special quotes* about him, by himself and people who worked with him. We descided to explain his life and specialities with quotes.
 
 For the programming part, Nele did all the interactive parts using React. I mostly focussed on front end and making the site responsive.
