@@ -5,7 +5,7 @@
 
     &-title {
       font-size: 1.8rem;
-      font-weight: 800;
+      font-weight: bold;
     }
 
     &-date {
@@ -34,7 +34,7 @@
 
     &-title {
       font-size: 1.2rem;
-      font-weight: 800;
+      font-weight: bold;
     }
 
     &-content {
@@ -58,7 +58,7 @@
       width: 50%;
 
       & em {
-        font-weight: 800;
+        font-weight: bold;
 
         & a {
           text-decoration: underline;
@@ -72,7 +72,7 @@
 
       &-subtitle {
         font-size: 1.1rem;
-        font-weight: 800;
+        font-weight: bold;
         line-height: 2.2rem;
       }
 
