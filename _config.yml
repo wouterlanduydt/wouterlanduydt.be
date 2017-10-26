@@ -17,7 +17,8 @@ title: Wouter Landuydt
 description: > # this means to ignore newlines until "baseurl:"
   Portfolio of Wouter Landuydt. A Digital Design & Development student at Howest.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: https://wouterlanduydt.be
+enforce_ssl: wouterlanduydt.be
 
 socials:
   instagram: wouterlanduydt
