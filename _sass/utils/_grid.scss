@@ -1,0 +1,16 @@
+@supports (display: grid) {
+
+  .post-list {
+    display: grid;
+    grid-gap: .6rem;
+    width: 90vw;
+    margin-bottom: 0;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .post-item {
+    width: auto;
+    margin-bottom: 0;
+  }
+
+}

@@ -1,4 +1,4 @@
-@media (max-width: 1000px) {
+@media (max-width: 1025px) {
 
   .post-item {
     width: 32%;
@@ -120,6 +120,54 @@
 
   .header__title {
     font-size: 1.5rem;
+  }
+
+}
+
+@supports (display: grid) {
+
+  @media (max-width: 1025px) {
+
+    .post-list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .post-item {
+      width: auto;
+    }
+
+  }
+
+  @media (max-width: 850px) {
+
+    .post-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .post-item {
+      width: auto;
+    }
+
+  }
+
+  @media (max-width: 640px) {
+
+    .post-list {
+      width: 94vw;
+    }
+
+  }
+
+  @media (max-width: 530px) {
+
+    .post-list {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .post-item {
+      width: auto;
+    }
+
   }
 
 }

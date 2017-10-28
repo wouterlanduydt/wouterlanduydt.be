@@ -11,6 +11,11 @@
 
     &__li i {
       color: $black;
+
+      &:hover {
+        opacity: .7;
+      }
+
     }
 
   }
