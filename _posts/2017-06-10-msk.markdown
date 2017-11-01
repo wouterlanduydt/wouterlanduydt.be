@@ -13,6 +13,7 @@ imagecol2:
   - /assets/images/details/msk/msk-5.jpg
 summary:
 category: Web
+online: https://dry-garden-69599.herokuapp.com/
 team:
   - 'Eva Baete'
   - 'Ruuben Lambrechts'
