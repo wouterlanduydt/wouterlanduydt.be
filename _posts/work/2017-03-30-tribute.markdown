@@ -1,5 +1,6 @@
 ---
 layout: post
+category: work
 title:  "Tribute"
 date:   2017-03-30 00:00:00 +0200
 online: http://student.howest.be/wouter.landuydt/20162017/ma4/tribute/index.html
@@ -13,7 +14,7 @@ imagecol2:
   - /assets/images/details/freddy/freddy-4.jpg
   - /assets/images/details/freddy/freddy-5.jpg
 summary:
-category: Web
+tag: Web
 team:
   - 'Nele De Bruycker'
   - 'Wouter Landuydt'
