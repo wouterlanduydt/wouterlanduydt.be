@@ -1,9 +1,13 @@
 body {
-  font-family: 'Open Sans', 'Helvetica Nue';
+  font-family: Inter, 'Helvetica', 'Arial';
   margin: 0 auto;
   color: $black;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 1.15rem;
+}
+
+.wf-loading, .wf-inactive {
+  font-family: 'Helvetica', 'Arial', 'Verdana', 'Trebuchet MS';
 }
 
 a {
