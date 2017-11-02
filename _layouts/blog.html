@@ -1,3 +1,15 @@
 ---
 layout: default
 ---
+<ul class="blog-list">
+  {% for blog in site.categories.blog %}
+    <li>
+      {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+      <span class="blog-meta">{{ blog.date | date: date_format }}</span>
+
+      <h2>
+        <a class="blog-link" href="{{ blog.url | relative_url }}">{{ blog.title | escape }}</a>
+      </h2>
+    </li>
+  {% endfor %}
+</ul>
