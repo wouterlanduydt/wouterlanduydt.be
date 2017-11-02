@@ -1,12 +1,13 @@
 ---
 layout: post
+category: work
 title:  "Orca Game"
 date:   2016-12-20 00:00:00 +0200
 online: http://student.howest.be/wouter.landuydt/20162017/cod/game/
 coverimage: /assets/images/previews/orca-game.jpg
 headerimage: /assets/images/headers/orca-header.jpg
 summary:
-category: Game Development
+tag: Game Development
 team:
   - 'Chloë Devriese'
   - 'Eva Jacobs'

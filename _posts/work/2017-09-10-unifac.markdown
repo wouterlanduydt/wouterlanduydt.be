@@ -1,5 +1,6 @@
 ---
 layout: post
+category: work
 title:  "Students on Stage"
 date:   2017-06-10 00:00:00 +0200
 coverimage: /assets/images/previews/sos.jpg
@@ -12,7 +13,7 @@ imagecol2:
   - /assets/images/details/sos/sos-4.jpg
   - /assets/images/details/sos/sos-5.jpg
 summary: Unifac asked me to spike interest by possible sponsors for their Students on Stage festival.
-category: Web
+tag: Web
 online: https://studentsonstage.unifac.be
 client: Unifac
 ---

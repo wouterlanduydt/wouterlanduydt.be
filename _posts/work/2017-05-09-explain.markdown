@@ -1,5 +1,6 @@
 ---
 layout: post
+category: work
 title:  "Off Assignment"
 date:   2017-05-09 00:00:00 +0200
 coverimage: /assets/images/previews/explain.jpg
@@ -7,7 +8,7 @@ headerimage: /assets/images/headers/explain-header.jpg
 videourl: https://player.vimeo.com/video/234110391
 online: https://vimeo.com/234110391
 summary:
-category: Motion
+tag: Motion
 client: School
 ---
 
