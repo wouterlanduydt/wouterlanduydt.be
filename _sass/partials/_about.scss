@@ -25,9 +25,18 @@
     transition: all ease .5s;
 
     &:hover {
-      box-shadow: inset 100px 0 0 0 $black;
+      box-shadow: inset 6rem 0 0 0 $black;
       color: #fff;
     }
+  }
+
+  &-music {
+    font-size: 1rem;
+
+    &-link {
+      border-bottom: .1rem solid $black;
+    }
+
   }
 
 }
