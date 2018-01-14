@@ -1,0 +1,31 @@
+---
+layout: post
+category: work
+title:  "VJ App"
+date:   2017-12-20 00:00:00 +0200
+coverimage: /assets/images/previews/vjapp.jpg
+headerimage: /assets/images/headers/vjapp-header.jpg
+images:
+  - /assets/images/details/vjapp/vjapp-1.jpg
+  - /assets/images/details/vjapp/vjapp-2.jpg
+summary: An experiment with Web Midi, Web Audio and three.js.
+tag: Web
+team:
+  - 'Ruuben Lambrechts'
+  - 'Wouter Landuydt'
+online: https://github.com/wouterlanduydt/vj-app
+videourl: https://player.vimeo.com/video/250821848
+client: School
+---
+
+<span class="post-content-text-subtitle" >Brief</span><br/>
+Create a web application using *one technology seen in class* and one *new technology*. Because this is an experiment, there are no browser requirements.
+
+<span class="post-content-text-subtitle" >Concept</span><br/>
+I've always been a big fan of MIDI-devices, mainly because I played around with them while I was still busy with DJ'ing. So we were pretty sure we wanted to do something with *Web Midi*.
+
+We had been playing around with a *Traktor Kontrol F1*'s MIDI controls and changing the width and height of a *three.js* plane we made in class, but wanted to go further.
+
+As a final concept we came up with a VJ application, *using the MIDI output to manipulate WebGL objects*. There are three scenes you can switch through and manipulate the speed, size, beat sensitivity, colors, materials,... of the objects. We also created some "one-shot" effects like a strobe, fade out and a disco effect. As a bonus we implemented *Web Audio* to detect the frequencies of the music and use it to manipulate the visuals even further.
+
+We learned a lot with this project. It was hard figuring out all the different technologies, but we're very happy with the final result.

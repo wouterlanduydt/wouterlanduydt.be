@@ -88,14 +88,13 @@
     width: 100%;
   }
 
-  .post-content-media {
+  .post-content-media-images {
     display: flex;
     flex-direction: column;
+  }
 
-    &-col {
-      width: 100%;
-    }
-
+  .post-content-media-col {
+    width: 100%;
   }
 
   .about-img {

@@ -84,10 +84,24 @@
       padding-left: 2rem;
 
       display: flex;
+      flex-direction: column;
       justify-content: space-between;
+
+      & iframe {
+        margin-bottom: 2rem;
+      }
+
+      &-images {
+        display: flex;
+        justify-content: space-between;
+      }
 
       &-col {
         width: 48%;
+      }
+
+      &-full {
+        width: 100%;
       }
 
       &-img {

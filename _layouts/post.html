@@ -71,20 +71,36 @@ layout: default
         <iframe src="{{ page.videourl }}" width="100%" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       {% endif %}
 
-      {% if page.imagecol1 %}
-      <div class="post-content-media-col">
-        {% for image in page.imagecol1 %}
-          <img class="post-content-media-img" src="{{ image }}" alt="">
-        {% endfor %}
-      </div>
-      {% endif %}
+      {% if page.imagecol1 or page.images %}
 
-      {% if page.imagecol2 %}
-      <div class="post-content-media-col">
-        {% for image in page.imagecol2 %}
-          <img class="post-content-media-img" src="{{ image }}" alt="">
-        {% endfor %}
-      </div>
+      <div class="post-content-media-images">
+
+        {% if page.images %}
+        <div class="post-content-media-full">
+          {% for image in page.images %}
+            <img class="post-content-media-img" src="{{ image }}" alt="">
+          {% endfor %}
+        </div>
+        {% endif %}
+
+        {% if page.imagecol1 %}
+        <div class="post-content-media-col">
+          {% for image in page.imagecol1 %}
+            <img class="post-content-media-img" src="{{ image }}" alt="">
+          {% endfor %}
+        </div>
+        {% endif %}
+
+        {% if page.imagecol2 %}
+        <div class="post-content-media-col">
+          {% for image in page.imagecol2 %}
+            <img class="post-content-media-img" src="{{ image }}" alt="">
+          {% endfor %}
+        </div>
+        {% endif %}
+
+        </div>
+
       {% endif %}
 
     </div>
