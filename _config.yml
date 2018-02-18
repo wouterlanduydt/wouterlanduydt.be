@@ -15,9 +15,10 @@
 # in the templates via {{ site.myvariable }}.
 title: Wouter Landuydt
 description: > # this means to ignore newlines until "baseurl:"
-  Portfolio of Wouter Landuydt. A Digital Design & Development student at Howest.
+  Hi, I'm Wouter. A Digital Design & Development student at Howest. I'm interested in User Experience and Front-End Development. Let's connect!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://wouterlanduydt.be
+coverimage: https://wouterlanduydt.be/assets/images/previews/jef.jpg
 enforce_ssl: wouterlanduydt.be
 
 socials:
