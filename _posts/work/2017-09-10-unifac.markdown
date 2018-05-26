@@ -2,7 +2,7 @@
 layout: post
 category: work
 title:  "Students on Stage"
-date:   2017-06-10 00:00:00 +0200
+date:   2018-05-23 00:00:00 +0200
 coverimage: /assets/images/previews/sos.jpg
 headerimage: /assets/images/headers/sos-header.jpg
 imagecol1:
@@ -19,11 +19,5 @@ client: Unifac
 ---
 
 <span class="post-content-text-subtitle" >Brief</span><br/>
-Create an *attractive promosite* for possible sponsors. After seeing this site they need to be informed and *convinced to sponsor* the festival.
-
-<span class="post-content-text-subtitle" >Concept</span><br/>
-I got some pictures and the logo. Offcourse everything needed to be *Unifac-themed*, so I used their blue and a lot of whitespace.
-
-I designed the website in Sketch and we colaborated using Marvel. They commented on my designs after I uploaded new versions. Collaboration was quick and easy!
-
-To create the interactive parts in the website (like an image silder and contact panes) I used *React*.
+<span class="post-content-text-subtitle" >Approach</span><br/>
+<span class="post-content-text-subtitle" >Technologies</span><br/>
