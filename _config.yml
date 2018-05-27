@@ -18,7 +18,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Hi, I'm Wouter. A Digital Design & Development student at Howest. I'm interested in User Experience and Front-End Development. Let's connect!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://wouterlanduydt.be
-coverimage: https://wouterlanduydt.be/assets/images/previews/jef.jpg
+coverimage: https://wouterlanduydt.be/assets/images/headers/sos-header.jpg
 enforce_ssl: wouterlanduydt.be
 
 socials:
