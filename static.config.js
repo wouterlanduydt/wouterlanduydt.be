@@ -1,33 +1,23 @@
-import fetchData from "./src/prismic/fetch";
+import fetchData from "./src/contentful/fetch";
 
 export default {
   getSiteData: () => ({
-    title: "React Static Prismic"
+    title: "Wouter Landuydt"
   }),
   getRoutes: async () => {
-    const posts = await fetchData();
+    const data = await fetchData();
+    console.log(data);
     return [
       {
         path: "/",
-        component: "src/containers/Home"
+        component: "src/containers/Home",
+        getData: () => ({
+          data
+        })
       },
       {
         path: "/about",
         component: "src/containers/About"
-      },
-      {
-        path: "/blog",
-        component: "src/containers/Blog",
-        getData: () => ({
-          posts
-        }),
-        children: posts.map(post => ({
-          path: `/post/${post.id}`,
-          component: "src/containers/Post",
-          getData: () => ({
-            post
-          })
-        }))
       },
       {
         is404: true,

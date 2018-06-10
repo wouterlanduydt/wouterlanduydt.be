@@ -1,8 +1,9 @@
 import React from "react";
-import { withSiteData } from "react-static";
+import { withRouteData } from "react-static";
 
-export default withSiteData(() => (
+export default withRouteData(data => (
   <div>
+    {console.log(data)}
     <h1>Home</h1>
   </div>
 ));
