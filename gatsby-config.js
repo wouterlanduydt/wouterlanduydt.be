@@ -18,7 +18,9 @@ try {
 }
 
 module.exports = {
-  pathPrefix: '/gatsby-contentful-starter',
+  siteMetadata: {
+    title: `Wouter Landuydt`,
+  },
   plugins: [
     'gatsby-transformer-remark',
     'gatsby-plugin-react-helmet',

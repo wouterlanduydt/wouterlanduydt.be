@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 
-class Home extends React.Component {
+class Home extends Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const projects = get(this, 'props.data.allContentfulProject.edges')
@@ -11,17 +11,15 @@ class Home extends React.Component {
     return (
       <div>
         <Helmet title={siteTitle} />
-        <div>
-          <ul>
-            {projects.map(({ project }) => {
-              return (
-                <Link to={`/projects/${project.slug}`} key={project.slug}>
-                  {project.slug}
-                </Link>
-              )
-            })}
-          </ul>
-        </div>
+        <ul>
+          {projects.map(({ node }) => {
+            return (
+              <li key={node.slug}>
+                <Link to={`/projects/${node.slug}`}>{node.slug}</Link>
+              </li>
+            )
+          })}
+        </ul>
       </div>
     )
   }
@@ -37,6 +35,11 @@ export const pageQuery = graphql`
           title
           slug
         }
+      }
+    }
+    site {
+      siteMetadata {
+        title
       }
     }
   }
