@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-export default () => (
+const Navigation = () => (
   <nav role="navigation">
     <ul>
       <li>
@@ -13,3 +13,5 @@ export default () => (
     </ul>
   </nav>
 )
+
+export default Navigation
