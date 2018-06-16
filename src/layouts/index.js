@@ -1,8 +1,14 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React, { Component } from 'react'
+import { ThemeProvider, injectGlobal } from 'styled-components'
+import branding from '../styles/branding'
+import reset from 'styled-reset'
 import Navigation from '../components/Navigation'
 
-class Template extends React.Component {
+injectGlobal`
+  ${reset}
+`
+
+class Template extends Component {
   render() {
     const { children } = this.props
 
@@ -12,10 +18,12 @@ class Template extends React.Component {
     }
 
     return (
-      <div>
-        <Navigation />
-        {children()}
-      </div>
+      <ThemeProvider theme={branding}>
+        <div>
+          <Navigation />
+          {children()}
+        </div>
+      </ThemeProvider>
     )
   }
 }

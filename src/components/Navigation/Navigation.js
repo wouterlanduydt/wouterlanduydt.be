@@ -1,8 +1,13 @@
 import React from 'react'
+import styled from 'styled-components'
 import Link from 'gatsby-link'
 
+const Wrapper = styled.nav`
+  background-color: ${props => props.theme.palette.neutral01};
+`
+
 const Navigation = () => (
-  <nav role="navigation">
+  <Wrapper role="navigation">
     <ul>
       <li>
         <Link to="/">Home</Link>
@@ -11,7 +16,7 @@ const Navigation = () => (
         <Link to="/about">About</Link>
       </li>
     </ul>
-  </nav>
+  </Wrapper>
 )
 
 export default Navigation
