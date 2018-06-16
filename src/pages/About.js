@@ -8,7 +8,7 @@ const About = props => {
   return (
     <div>
       <Helmet title={`About | ${siteTitle}`} />
-      <p>about</p>
+      <p>About</p>
     </div>
   )
 }
