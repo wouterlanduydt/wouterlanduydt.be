@@ -1,6 +1,18 @@
+import { css } from 'styled-components'
+
 const palette = {
   light: '#ffffff',
   dark: '#000000',
+}
+
+const textStyles = {
+  heading01: css`
+    font-size: 3.2em;
+  `,
+
+  heading02: css`
+    font-size: 2em;
+  `,
 }
 
 const grid = {
@@ -21,4 +33,5 @@ export default {
   palette,
   grid,
   breakpoints,
+  textStyles,
 }

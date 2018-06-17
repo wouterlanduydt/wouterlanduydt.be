@@ -30,7 +30,7 @@ const LinkList = styled.ul`
 `
 
 const LinkItem = styled.li`
-  :not(:last-child) {
+  &:not(:last-child) {
     margin-right: 16px;
   }
 `

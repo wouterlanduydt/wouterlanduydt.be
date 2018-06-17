@@ -15,6 +15,7 @@ class Home extends Component {
         <Helmet title={siteTitle} />
         <Intro />
         <ProjectsList projects={projects} />
+        <div style={{ height: '1000px' }} />
       </div>
     )
   }
@@ -29,6 +30,12 @@ export const pageQuery = graphql`
         node {
           title
           slug
+          previewImage {
+            file {
+              url
+            }
+          }
+          tags
         }
       }
     }

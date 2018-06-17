@@ -1,11 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
 import Link from 'gatsby-link'
-import Logo from '../../assets/svg/logo.svg'
+import LogoImage from '../../assets/svg/logo.svg'
 
 const Wrapper = styled.div`
   background-color: ${props => props.theme.palette.dark};
-  height: 56px;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  height: 72px;
   width: 100%;
 `
 
@@ -27,21 +30,32 @@ const LogoLink = styled(Link)`
   transform: translateX(-50%);
 `
 
+const Logo = styled.img`
+  height: 40px;
+  width: auto;
+`
+
 const PagesList = styled.ol`
   display: flex;
   flex: 0 1 auto;
   margin-left: auto;
 `
 
+const StyledLink = styled(Link)`
+  font-size: 1.6em;
+  color: ${props => props.theme.palette.light};
+  text-transform: uppercase;
+`
+
 const Navigation = () => (
   <Wrapper role="navigation">
     <Nav>
       <LogoLink to="/">
-        <img src={Logo} alt="" />
+        <Logo src={LogoImage} alt="" />
       </LogoLink>
       <PagesList>
         <li>
-          <Link to="/about">About</Link>
+          <StyledLink to="/about">About</StyledLink>
         </li>
       </PagesList>
     </Nav>
