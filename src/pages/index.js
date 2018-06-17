@@ -3,6 +3,7 @@ import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Intro from '../components/Intro'
+import ProjectsList from '../components/ProjectsList'
 
 class Home extends Component {
   render() {
@@ -13,15 +14,7 @@ class Home extends Component {
       <div>
         <Helmet title={siteTitle} />
         <Intro />
-        <ul>
-          {projects.map(({ node }) => {
-            return (
-              <li key={node.slug}>
-                <Link to={`/projects/${node.slug}`}>{node.slug}</Link>
-              </li>
-            )
-          })}
-        </ul>
+        <ProjectsList projects={projects} />
       </div>
     )
   }

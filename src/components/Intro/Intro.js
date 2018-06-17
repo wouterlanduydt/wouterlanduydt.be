@@ -60,7 +60,7 @@ const Intro = () => (
           <LinkText href="https://www.google.com">social</LinkText>
         </LinkItem>
       </LinkList>
-      <div>^</div>
+      <div>x</div>
     </ContentWrapper>
   </Wrapper>
 )
