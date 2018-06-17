@@ -17,7 +17,7 @@ const StyledLink = styled(Link)`
   }
 
   &:hover .image {
-    transform: scale(1.05);
+    transform: scale(1.1);
   }
 `
 
@@ -37,8 +37,8 @@ const Overlay = styled.header`
   background-color: ${props => props.theme.palette.dark};
   overflow: hidden;
   width: 100%;
-  height: 80px;
-  transform: translateY(112px);
+  height: 40px;
+  transform: translateY(72px);
   transform-origin: center bottom;
   transition: transform 300ms ease-out;
   padding: 16px;
@@ -46,6 +46,19 @@ const Overlay = styled.header`
 
 const Title = styled.h2`
   color: ${props => props.theme.palette.light};
+`
+
+const TagsList = styled.ul`
+  display: flex;
+`
+
+const TagItem = styled.li`
+  font-size: 1.6em;
+  color: ${props => props.theme.palette.light};
+
+  &:not(:last-child) {
+    margin-right: 4px;
+  }
 `
 
 const ProjectPreview = ({ project }) => {
@@ -57,7 +70,9 @@ const ProjectPreview = ({ project }) => {
         <Image src={previewImage.file.url} alt="" className="image" />
         <Overlay className="overlay">
           <Title>{title}</Title>
-          <ul>{tags.map(tag => <li key={tag}>{tag}</li>)}</ul>
+          <TagsList>
+            {tags.map(tag => <TagItem key={tag}>{tag}</TagItem>)}
+          </TagsList>
         </Overlay>
       </StyledLink>
     </Wrapper>

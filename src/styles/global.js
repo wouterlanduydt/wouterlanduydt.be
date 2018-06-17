@@ -15,6 +15,10 @@ export default css`
     text-decoration: none;
   }
 
+  h1 {
+    ${textStyles.heading01};
+  }
+
   h2 {
     ${textStyles.heading02};
   }

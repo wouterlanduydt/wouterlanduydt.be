@@ -4,16 +4,18 @@ import Link from 'gatsby-link'
 import get from 'lodash/get'
 
 const ProjectTemplate = props => {
-  const project = get(props, 'data.contentfulProject')
+  const project = props.data.contentfulProject
+  const { title, description } = project
+
   const siteTitle = get(props, 'data.site.siteMetadata.title')
 
   return (
     <div>
-      <Helmet title={`${project.title} | ${siteTitle}`} />
-      <h1>{project.title}</h1>
+      <Helmet title={`${title} | ${siteTitle}`} />
+      <h1>{title}</h1>
       <div
         dangerouslySetInnerHTML={{
-          __html: project.description.childMarkdownRemark.html,
+          __html: description.childMarkdownRemark.html,
         }}
       />
     </div>

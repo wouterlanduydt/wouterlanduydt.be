@@ -1,19 +1,19 @@
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
-import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Intro from '../components/Intro'
 import ProjectsList from '../components/ProjectsList'
 
 class Home extends Component {
   render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-    const projects = get(this, 'props.data.allContentfulProject.edges')
+    const siteTitle = this.props.data.site.siteMetadata.title
+    const projects = this.props.data.allContentfulProject.edges
+    const intro = this.props.data.allContentfulAbout.edges[0].node.intro
 
     return (
       <div>
         <Helmet title={siteTitle} />
-        <Intro />
+        <Intro intro={intro} />
         <ProjectsList projects={projects} />
         <div style={{ height: '1000px' }} />
       </div>
@@ -36,6 +36,17 @@ export const pageQuery = graphql`
             }
           }
           tags
+        }
+      }
+    }
+    allContentfulAbout {
+      edges {
+        node {
+          intro {
+            childMarkdownRemark {
+              html
+            }
+          }
         }
       }
     }

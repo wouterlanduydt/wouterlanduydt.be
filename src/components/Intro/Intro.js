@@ -40,15 +40,14 @@ const LinkText = styled.a`
   font-size: 2.8em;
 `
 
-const Intro = () => (
+const Intro = ({ intro }) => (
   <Wrapper>
     <ContentWrapper>
-      <Text>
-        I'm Wouter Landuydt, Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit. Duis ultricies nec neque nec feugiat. Curabitur rutrum volutpat
-        semper. Aliquam erat volutpat. Vestibulum ante ipsum primis in faucibus
-        orci luctus et ultrices posuere cubilia Curae.
-      </Text>
+      <Text
+        dangerouslySetInnerHTML={{
+          __html: intro.childMarkdownRemark.html,
+        }}
+      />
       <LinkList>
         <LinkItem>
           <LinkText href="https://www.google.com">social</LinkText>

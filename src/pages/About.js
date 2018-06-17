@@ -1,5 +1,4 @@
 import React from 'react'
-import get from 'lodash/get'
 import Helmet from 'react-helmet'
 
 const About = props => {
