@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
 import { ThemeProvider, injectGlobal } from 'styled-components'
 import branding from '../styles/branding'
+import global from '../styles/global'
 import reset from 'styled-reset'
 import Navigation from '../components/Navigation'
 
 injectGlobal`
   ${reset}
+  ${global}
 `
 
 class Template extends Component {

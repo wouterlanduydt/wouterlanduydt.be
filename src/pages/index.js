@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
+import Intro from '../components/Intro'
 
 class Home extends Component {
   render() {
@@ -11,6 +12,7 @@ class Home extends Component {
     return (
       <div>
         <Helmet title={siteTitle} />
+        <Intro />
         <ul>
           {projects.map(({ node }) => {
             return (

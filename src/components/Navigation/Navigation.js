@@ -1,9 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 import Link from 'gatsby-link'
+import Logo from '../../assets/svg/logo.svg'
 
 const Wrapper = styled.div`
-  background-color: ${props => props.theme.palette.white};
+  background-color: ${props => props.theme.palette.dark};
   height: 56px;
   width: 100%;
 `
@@ -11,7 +12,7 @@ const Wrapper = styled.div`
 const Nav = styled.nav`
   display: flex;
   align-items: center;
-  justify-content: flex-start; 
+  justify-content: flex-start;
   margin: 0 auto;
   height: 100%;
   position: relative;
@@ -36,7 +37,7 @@ const Navigation = () => (
   <Wrapper role="navigation">
     <Nav>
       <LogoLink to="/">
-        <div>WOUTER LANDUYDT</div>
+        <img src={Logo} alt="" />
       </LogoLink>
       <PagesList>
         <li>

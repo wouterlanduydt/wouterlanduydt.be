@@ -1,9 +1,11 @@
 const palette = {
-  white: '#ffffff',
+  light: '#ffffff',
+  dark: '#000000',
 }
 
 const grid = {
   maxWidth: '1120px',
+  maxWidthSm: '960px',
   container: '90%',
 }
 
