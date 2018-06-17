@@ -9,6 +9,7 @@ export default css`
   body {
     font-size: 62.5%;
     margin-top: 72px;
+    ${'' /* font-family: 'Noto Serif'; */};
   }
 
   a {

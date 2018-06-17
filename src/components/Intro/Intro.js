@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import Link from 'gatsby-link'
 
 const Wrapper = styled.div`
-  height: 400px;
   background-color: ${props => props.theme.palette.dark};
 `
 
@@ -11,6 +10,7 @@ const ContentWrapper = styled.section`
   display: flex;
   color: ${props => props.theme.palette.light};
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   margin: 0 auto;
   width: ${props => props.theme.grid.container};
@@ -21,7 +21,7 @@ const Text = styled.p`
   max-width: ${props => props.theme.grid.maxWidthSm};
   text-align: center;
   font-size: 3.2em;
-  margin-top: 88px;
+  margin-top: 80px;
 `
 
 const LinkList = styled.ul`
@@ -38,6 +38,10 @@ const LinkItem = styled.li`
 const LinkText = styled.a`
   color: ${props => props.theme.palette.light};
   font-size: 2.8em;
+`
+
+const Arrow = styled.div`
+  margin: 72px 0 40px;
 `
 
 const Intro = ({ intro }) => (
@@ -59,7 +63,7 @@ const Intro = ({ intro }) => (
           <LinkText href="https://www.google.com">social</LinkText>
         </LinkItem>
       </LinkList>
-      <div>x</div>
+      <Arrow>x</Arrow>
     </ContentWrapper>
   </Wrapper>
 )
