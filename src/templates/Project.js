@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
-import get from 'lodash/get'
+import ProjectHeader from '../components/ProjectHeader'
 
 const ProjectTemplate = props => {
   const siteTitle = props.data.site.siteMetadata.title
@@ -20,34 +20,22 @@ const ProjectTemplate = props => {
   return (
     <div>
       <Helmet title={`${title} | ${siteTitle}`} />
-      <h1>{title}</h1>
-      <span>{date}</span>
-      <ol>
-        {teamMembers && (
-          <li>
-            <span>team</span>
-            <ul>{teamMembers.map(member => <li>{member}</li>)}</ul>
-          </li>
-        )}
-        <li>
-          <span>tags</span>
-          <ul>{tags.map(tag => <li>{tag}</li>)}</ul>
-        </li>
-        <li>
-          <span>client</span>
-          <span>{client}</span>
-        </li>
-        <li>
-          <span>online</span>
-          <span>{link}</span>
-        </li>
-      </ol>
+      <ProjectHeader
+        title={title}
+        date={date}
+        teamMembers={teamMembers}
+        client={client}
+        tags={tags}
+      />
       <div
         dangerouslySetInnerHTML={{
           __html: description.childMarkdownRemark.html,
         }}
       />
-      {detailImages.map(image => <img src={image.file.url} alt="" />)}
+      <a href={link}>ONLINE</a>
+      {detailImages.map(image => (
+        <img src={image.file.url} key={image.file.url} alt="" />
+      ))}
     </div>
   )
 }

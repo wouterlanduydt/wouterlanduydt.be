@@ -2,7 +2,7 @@ import { css } from 'styled-components'
 
 const palette = {
   light: '#ffffff',
-  dark: '#000000',
+  dark: '#1A1E22',
 }
 
 const textStyles = {
