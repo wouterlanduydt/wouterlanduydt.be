@@ -19,6 +19,8 @@ const ContentWrapper = styled.section`
 
 const Text = styled.p`
   max-width: ${props => props.theme.grid.maxWidthSm};
+  font-family: ${props => props.theme.fontFamilies.merriweather};
+  line-height: 1.3em;
   text-align: center;
   font-size: 3.2em;
   margin-top: 80px;

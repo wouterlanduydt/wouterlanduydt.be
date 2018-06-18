@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import ProjectHeader from '../components/ProjectHeader'
+import ProjectContent from '../components/ProjectContent'
 
 const ProjectTemplate = props => {
   const siteTitle = props.data.site.siteMetadata.title
@@ -27,15 +28,11 @@ const ProjectTemplate = props => {
         client={client}
         tags={tags}
       />
-      <div
-        dangerouslySetInnerHTML={{
-          __html: description.childMarkdownRemark.html,
-        }}
+      <ProjectContent
+        description={description}
+        detailImages={detailImages}
+        link={link}
       />
-      <a href={link}>ONLINE</a>
-      {detailImages.map(image => (
-        <img src={image.file.url} key={image.file.url} alt="" />
-      ))}
     </div>
   )
 }

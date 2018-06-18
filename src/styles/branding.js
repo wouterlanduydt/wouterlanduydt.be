@@ -2,16 +2,33 @@ import { css } from 'styled-components'
 
 const palette = {
   light: '#ffffff',
-  dark: '#1A1E22',
+  dark: '#000000',
+}
+
+const fontFamilies = {
+  merriweather: 'merriweather',
+  openSans: 'open sans',
+}
+
+const fontWeights = {
+  light: 300,
+  regular: 400,
+  medium: 500,
+  semibold: 600,
+  bold: 700,
 }
 
 const textStyles = {
   heading01: css`
-    font-size: 3.2em;
+    font-size: 3.6em;
+    font-weight: ${fontWeights.semibold};
+    font-family: ${fontFamilies.merriweather};
   `,
 
   heading02: css`
     font-size: 2em;
+    font-family: ${fontFamilies.merriweather};
+    font-weight: ${fontWeights.semibold};
   `,
 }
 
@@ -34,4 +51,6 @@ export default {
   grid,
   breakpoints,
   textStyles,
+  fontWeights,
+  fontFamilies,
 }

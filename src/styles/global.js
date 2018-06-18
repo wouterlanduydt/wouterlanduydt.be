@@ -1,5 +1,5 @@
 import { css } from 'styled-components'
-import { textStyles } from './branding'
+import { textStyles, fontWeights, fontFamilies } from './branding'
 
 export default css`
   html {
@@ -9,7 +9,8 @@ export default css`
   body {
     font-size: 62.5%;
     margin-top: 72px;
-    ${'' /* font-family: 'Noto Serif'; */};
+    font-family: ${fontFamilies.openSans};
+    font-weight: ${fontWeights.light};
   }
 
   a {

@@ -37,8 +37,8 @@ const Overlay = styled.header`
   background-color: ${props => props.theme.palette.dark};
   overflow: hidden;
   width: 100%;
-  height: 40px;
-  transform: translateY(72px);
+  height: 48px;
+  transform: translateY(80px);
   transform-origin: center bottom;
   transition: transform 300ms ease-out;
   padding: 16px;
@@ -46,6 +46,7 @@ const Overlay = styled.header`
 
 const Title = styled.h2`
   color: ${props => props.theme.palette.light};
+  margin: 2px 0 8px;
 `
 
 const TagsList = styled.ul`
@@ -55,6 +56,7 @@ const TagsList = styled.ul`
 const TagItem = styled.li`
   font-size: 1.6em;
   color: ${props => props.theme.palette.light};
+  text-transform: uppercase;
 
   &:not(:last-child) {
     margin-right: 4px;
