@@ -17,6 +17,10 @@ export default css`
     text-decoration: none;
   }
 
+  strong {
+    font-weight: ${fontWeights.bold};
+  }
+
   h1 {
     ${textStyles.heading01};
   }

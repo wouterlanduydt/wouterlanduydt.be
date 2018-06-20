@@ -4,7 +4,8 @@ import Link from 'gatsby-link'
 
 const Wrapper = styled.li`
   width: 49%;
-  height: 304px;
+  height: auto;
+  margin-bottom: 32px;
 `
 
 const StyledLink = styled(Link)`
@@ -17,7 +18,7 @@ const StyledLink = styled(Link)`
   }
 
   &:hover .image {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 `
 

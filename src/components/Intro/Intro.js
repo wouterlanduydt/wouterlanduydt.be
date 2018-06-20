@@ -15,11 +15,11 @@ const ContentWrapper = styled.section`
   margin: 0 auto;
   width: ${props => props.theme.grid.container};
   max-width: ${props => props.theme.grid.maxWidth};
+  font-family: ${props => props.theme.fontFamilies.merriweather};
 `
 
 const Text = styled.p`
   max-width: ${props => props.theme.grid.maxWidthSm};
-  font-family: ${props => props.theme.fontFamilies.merriweather};
   line-height: 1.3em;
   text-align: center;
   font-size: 3.2em;
@@ -27,26 +27,46 @@ const Text = styled.p`
 `
 
 const LinkList = styled.ul`
-  margin-top: 40px;
+  margin-top: 56px;
   display: flex;
 `
 
 const LinkItem = styled.li`
   &:not(:last-child) {
-    margin-right: 16px;
+    margin-right: 24px;
   }
 `
 
 const LinkText = styled.a`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: ${props => props.theme.palette.light};
   font-size: 2.8em;
+  font-weight: ${props => props.theme.fontWeights.semibold};
+  letter-spacing: 0.08em;
+
+  &:hover::after {
+    transform: scaleX(0.8);
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    margin-top: 6px;
+    width: 100%;
+    height: 3px;
+    transform: scaleX(0.2);
+    background-color: ${props => props.theme.palette.light};
+    transition: transform 250ms ease-in-out;
+  }
 `
 
 const Arrow = styled.div`
   margin: 72px 0 40px;
 `
 
-const Intro = ({ intro }) => (
+const Intro = ({ intro, githubLink, linkedInLink }) => (
   <Wrapper>
     <ContentWrapper>
       <Text
@@ -56,16 +76,17 @@ const Intro = ({ intro }) => (
       />
       <LinkList>
         <LinkItem>
-          <LinkText href="https://www.google.com">social</LinkText>
+          <LinkText href={githubLink} target="_blank">
+            GitHub
+          </LinkText>
         </LinkItem>
         <LinkItem>
-          <LinkText href="https://www.google.com">social</LinkText>
-        </LinkItem>
-        <LinkItem>
-          <LinkText href="https://www.google.com">social</LinkText>
+          <LinkText href={linkedInLink} target="_blank">
+            LinkedIn
+          </LinkText>
         </LinkItem>
       </LinkList>
-      <Arrow>x</Arrow>
+      <Arrow />
     </ContentWrapper>
   </Wrapper>
 )

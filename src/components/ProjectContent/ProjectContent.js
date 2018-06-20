@@ -36,10 +36,11 @@ const ProjectContent = ({ description, detailImages, link }) => (
         __html: description.childMarkdownRemark.html,
       }}
     />
-    <Button link={link} text="online" />
-    {detailImages.map(image => (
-      <StyledImage src={image.file.url} key={image.file.url} alt="" />
-    ))}
+    <Button link={link} text="online" target="_blank" />
+    {detailImages &&
+      detailImages.map(image => (
+        <StyledImage src={image.file.url} key={image.file.url} alt="" />
+      ))}
   </Wrapper>
 )
 

@@ -32,20 +32,20 @@ const SubtitleWrapper = styled.div`
 `
 
 const Subtitle = styled.span`
-  font-size: 2em;
-  line-height: 0.98em;
+  font-size: 2.8em;
+  line-height: 0.96em;
   font-weight: ${props => props.theme.fontWeights.regular};
   margin-right: 8px;
 `
 
 const PublishedDate = styled.span`
-  font-size: 1.4em;
+  font-size: 1.8em;
   text-transform: uppercase;
 `
 
 const StatsList = styled.ol`
   display: flex;
-  padding: 48px 0 64px;
+  padding: 56px 0 64px;
 `
 
 const Stat = styled.li`
@@ -75,6 +75,10 @@ const StatContent = styled.span`
 const StatContentLi = styled.li`
   ${statContentStyling};
 
+  &.tag {
+    text-transform: capitalize;
+  }
+
   &:not(:last-child) {
     margin-bottom: 4px;
   }
@@ -87,7 +91,11 @@ const TagsList = styled.ul`
 const ProjectHeader = ({ title, date, teamMembers, client, tags }) => {
   const getTagsItems = tags =>
     tags.map((tag, index) => (
-      <StatContentLi key={tag} style={{ whiteSpace: 'pre-wrap' }}>
+      <StatContentLi
+        className="tag"
+        key={tag}
+        style={{ whiteSpace: 'pre-wrap' }}
+      >
         {tag}
         {index < tags.length - 1 && ', '}
       </StatContentLi>
@@ -100,21 +108,22 @@ const ProjectHeader = ({ title, date, teamMembers, client, tags }) => {
         <Title>{title}</Title>
         <SubtitleWrapper>
           <Subtitle>Subtitle</Subtitle>
-          <PublishedDate>{format(date, 'MMM YYYY')}</PublishedDate>
+          <PublishedDate>- {format(date, 'MMM YYYY')}</PublishedDate>
         </SubtitleWrapper>
         <StatsList>
-          {teamMembers && (
-            <Stat>
-              <StatTitle>Team</StatTitle>
-              <ul>
-                {teamMembers.map(member => (
-                  <StatContentLi key={member}>{member}</StatContentLi>
-                ))}
-              </ul>
-            </Stat>
-          )}
+          {teamMembers.length > 1 &&
+            teamMembers && (
+              <Stat>
+                <StatTitle>Team</StatTitle>
+                <ul>
+                  {teamMembers.map(member => (
+                    <StatContentLi key={member}>{member}</StatContentLi>
+                  ))}
+                </ul>
+              </Stat>
+            )}
           <Stat>
-            <StatTitle>Tags</StatTitle>
+            <StatTitle>Category</StatTitle>
             <TagsList>{getTagsItems(tags)}</TagsList>
           </Stat>
           <Stat>

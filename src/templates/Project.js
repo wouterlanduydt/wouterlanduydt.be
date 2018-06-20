@@ -48,11 +48,6 @@ export const pageQuery = graphql`
       link
       teamMembers
       date
-      detailImages {
-        file {
-          url
-        }
-      }
       description {
         childMarkdownRemark {
           html
@@ -66,3 +61,9 @@ export const pageQuery = graphql`
     }
   }
 `
+
+// detailImages {
+//   file {
+//     url
+//   }
+// }

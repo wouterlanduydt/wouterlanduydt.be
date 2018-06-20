@@ -20,7 +20,7 @@ const fontWeights = {
 
 const textStyles = {
   heading01: css`
-    font-size: 3.6em;
+    font-size: 5.2em;
     font-weight: ${fontWeights.semibold};
     font-family: ${fontFamilies.merriweather};
   `,
