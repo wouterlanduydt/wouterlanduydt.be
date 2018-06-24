@@ -30,11 +30,18 @@ const textStyles = {
     font-family: ${fontFamilies.merriweather};
     font-weight: ${fontWeights.semibold};
   `,
+
+  heading03: css`
+    font-size: 2em;
+    font-family: ${fontFamilies.merriweather};
+    font-weight: ${fontWeights.semibold};
+  `,
 }
 
 const grid = {
   maxWidth: '1120px',
   maxWidthSm: '960px',
+  maxWidthXs: '648px',
   container: '90%',
 }
 

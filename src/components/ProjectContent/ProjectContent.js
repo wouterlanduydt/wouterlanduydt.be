@@ -10,13 +10,15 @@ const Wrapper = styled.div`
 `
 
 const Text = styled.div`
-  font-size: 1.8em;
-  line-height: 1.2em;
   margin-top: 56px;
 
   p:not(:last-child) {
     margin-bottom: 16px;
   }
+`
+
+const ButtonWrapper = styled.div`
+  margin: 32px 0 80px;
 `
 
 const StyledImage = styled.img`
@@ -36,7 +38,9 @@ const ProjectContent = ({ description, detailImages, link }) => (
         __html: description.childMarkdownRemark.html,
       }}
     />
-    <Button link={link} text="online" target="_blank" />
+    <ButtonWrapper>
+      <Button link={link} text="online" target="_blank" />
+    </ButtonWrapper>
     {detailImages &&
       detailImages.map(image => (
         <StyledImage src={image.file.url} key={image.file.url} alt="" />

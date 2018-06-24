@@ -13,6 +13,11 @@ export default css`
     font-weight: ${fontWeights.light};
   }
 
+  p {
+    font-size: 1.8em;
+    line-height: 1.2em;
+  }
+
   a {
     text-decoration: none;
   }
@@ -27,5 +32,9 @@ export default css`
 
   h2 {
     ${textStyles.heading02};
+  }
+
+  h3 {
+    ${textStyles.heading03};
   }
 `

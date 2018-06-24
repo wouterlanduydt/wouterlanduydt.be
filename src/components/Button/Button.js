@@ -10,8 +10,8 @@ const StyledLink = styled.a`
   border: 2px solid ${props => props.theme.palette.dark};
   color: ${props => props.theme.palette.dark};
   padding: 8px 24px;
-  margin: 32px 0 80px;
   transition: all 150ms;
+  user-select: none;
 
   &:hover {
     cursor: pointer;

@@ -18,12 +18,15 @@ const ContentWrapper = styled.section`
   font-family: ${props => props.theme.fontFamilies.merriweather};
 `
 
-const Text = styled.p`
+const Text = styled.div`
   max-width: ${props => props.theme.grid.maxWidthSm};
   line-height: 1.3em;
   text-align: center;
-  font-size: 3.2em;
   margin-top: 80px;
+
+  p {
+    font-size: 3.2em !important;
+  }
 `
 
 const LinkList = styled.ul`

@@ -19,7 +19,6 @@ class Home extends Component {
           linkedInLink={about.linkedInLink}
         />
         <ProjectsList projects={projects} />
-        <div style={{ height: '1000px' }} />
       </div>
     )
   }
