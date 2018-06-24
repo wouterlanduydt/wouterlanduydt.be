@@ -9,6 +9,7 @@ const ProjectTemplate = props => {
   const project = props.data.contentfulProject
   const {
     title,
+    subtitle,
     description,
     tags,
     teamMembers,
@@ -23,6 +24,7 @@ const ProjectTemplate = props => {
       <Helmet title={`${title} | ${siteTitle}`} />
       <ProjectHeader
         title={title}
+        subtitle={subtitle}
         date={date}
         teamMembers={teamMembers}
         client={client}
@@ -43,6 +45,7 @@ export const pageQuery = graphql`
   query ProjectBySlug($slug: String!) {
     contentfulProject(slug: { eq: $slug }) {
       title
+      subtitle
       tags
       client
       link

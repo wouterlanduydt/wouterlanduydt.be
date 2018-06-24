@@ -39,7 +39,7 @@ const ProjectContent = ({ description, detailImages, link }) => (
       }}
     />
     <ButtonWrapper>
-      <Button link={link} text="online" target="_blank" />
+      <Button link={link} text="Online" target="_blank" />
     </ButtonWrapper>
     {detailImages &&
       detailImages.map(image => (

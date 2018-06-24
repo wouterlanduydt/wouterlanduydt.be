@@ -32,14 +32,14 @@ const SubtitleWrapper = styled.div`
 `
 
 const Subtitle = styled.span`
-  font-size: 2.8em;
+  font-size: 2em;
   line-height: 0.96em;
   font-weight: ${props => props.theme.fontWeights.regular};
-  margin-right: 8px;
+  margin: 8px 8px 0 0;
 `
 
 const PublishedDate = styled.span`
-  font-size: 1.8em;
+  font-size: 1.6em;
   text-transform: uppercase;
 `
 
@@ -88,7 +88,14 @@ const TagsList = styled.ul`
   display: flex;
 `
 
-const ProjectHeader = ({ title, date, teamMembers, client, tags }) => {
+const ProjectHeader = ({
+  title,
+  subtitle,
+  date,
+  teamMembers,
+  client,
+  tags,
+}) => {
   const getTagsItems = tags =>
     tags.map((tag, index) => (
       <StatContentLi
@@ -107,7 +114,7 @@ const ProjectHeader = ({ title, date, teamMembers, client, tags }) => {
         <BackButton to="/">Back</BackButton>
         <Title>{title}</Title>
         <SubtitleWrapper>
-          <Subtitle>Subtitle</Subtitle>
+          <Subtitle>{subtitle}</Subtitle>
           <PublishedDate>- {format(date, 'MMM YYYY')}</PublishedDate>
         </SubtitleWrapper>
         <StatsList>
