@@ -2,12 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import Link from 'gatsby-link'
 
-const Wrapper = styled.li`
-  width: 49%;
-  height: auto;
-  margin-bottom: 32px;
-`
-
 const StyledLink = styled(Link)`
   position: relative;
   display: block;
@@ -68,7 +62,7 @@ const ProjectPreview = ({ project }) => {
   const { slug, previewImage, tags, title } = project
 
   return (
-    <Wrapper>
+    <li>
       <StyledLink to={`/projects/${slug}`}>
         <Image src={previewImage.file.url} alt="" className="image" />
         <Overlay className="overlay">
@@ -78,7 +72,7 @@ const ProjectPreview = ({ project }) => {
           </TagsList>
         </Overlay>
       </StyledLink>
-    </Wrapper>
+    </li>
   )
 }
 
