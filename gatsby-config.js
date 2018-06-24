@@ -20,6 +20,7 @@ try {
 module.exports = {
   siteMetadata: {
     title: `Wouter Landuydt`,
+    email: `wouter.landuydt@gmail.com`,
   },
   plugins: [
     'gatsby-transformer-remark',

@@ -3,18 +3,21 @@ import Helmet from 'react-helmet'
 import AboutContent from '../components/AboutContent'
 
 const About = props => {
-  const siteTitle = props.data.site.siteMetadata.title
+  const siteMetadata = props.data.site.siteMetadata
+  const { title, email } = siteMetadata
   const about = props.data.allContentfulAbout.edges[0].node
-  const { aboutTitle, aboutText, iKnow, iLove } = about
+  const { aboutTitle, aboutText, iKnow, iLove, resume } = about
 
   return (
     <div>
-      <Helmet title={`About | ${siteTitle}`} />
+      <Helmet title={`About | ${title}`} />
       <AboutContent
         aboutTitle={aboutTitle}
         aboutText={aboutText}
         iKnow={iKnow}
         iLove={iLove}
+        resume={resume}
+        email={email}
       />
     </div>
   )
@@ -46,6 +49,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        email
       }
     }
   }

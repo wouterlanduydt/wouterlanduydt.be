@@ -15,7 +15,7 @@ const Title = styled.h2`
 `
 
 const ButtonWrapper = styled.div`
-  margin: 32px 0 64px;
+  margin: 48px 0 80px;
 
   a:not(:last-child) {
     margin-right: 16px;
@@ -45,7 +45,14 @@ const ListItem = styled.li`
   }
 `
 
-const AboutContent = ({ aboutTitle, aboutText, iKnow, iLove }) => (
+const AboutContent = ({
+  aboutTitle,
+  aboutText,
+  iKnow,
+  iLove,
+  resume,
+  email,
+}) => (
   <Wrapper>
     <Title>{aboutTitle}</Title>
     <div
@@ -53,9 +60,10 @@ const AboutContent = ({ aboutTitle, aboutText, iKnow, iLove }) => (
         __html: aboutText.childMarkdownRemark.html,
       }}
     />
+    {console.log(`http://localhost:8000/about${resume.file.url}`)}
     <ButtonWrapper>
-      <Button text="Email Me" to="google" target="_blank" />
-      <Button text="Get My Resume" to="google" target="_blank" />
+      <Button text="Email Me" link={`mailto:${email}`} />
+      <Button text="My Resume" link={resume.file.url} target="_blank" />
     </ButtonWrapper>
     {iKnow && (
       <div>
