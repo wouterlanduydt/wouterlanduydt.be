@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import ProjectHeader from '../components/ProjectHeader'
 import ProjectContent from '../components/ProjectContent'
+import Footer from '../components/Footer'
 
 const ProjectTemplate = props => {
   const siteTitle = props.data.site.siteMetadata.title
@@ -35,6 +36,7 @@ const ProjectTemplate = props => {
         detailImages={detailImages}
         link={link}
       />
+      <Footer />
     </div>
   )
 }

@@ -32,8 +32,8 @@ const ProjectsList = ({ projects }) => (
   <Wrapper>
     <List>
       {projects.map(({ node }) => (
-        <ProjectWrapper>
-          <ProjectPreview key={node.slug} project={node} />
+        <ProjectWrapper key={node.slug}>
+          <ProjectPreview project={node} />
         </ProjectWrapper>
       ))}
     </List>

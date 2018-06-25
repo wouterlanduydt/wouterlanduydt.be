@@ -1,6 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import AboutContent from '../components/AboutContent'
+import Footer from '../components/Footer'
 
 const About = props => {
   const siteMetadata = props.data.site.siteMetadata
@@ -19,6 +20,7 @@ const About = props => {
         resume={resume}
         email={email}
       />
+      <Footer />
     </div>
   )
 }
