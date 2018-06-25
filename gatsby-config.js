@@ -1,21 +1,4 @@
-let contentfulConfig
-
-try {
-  contentfulConfig = require('./.contentful')
-} catch (_) {
-  contentfulConfig = {
-    spaceId: process.env.CONTENTFUL_SPACE_ID,
-    accessToken: process.env.CONTENTFUL_DELIVERY_TOKEN,
-  }
-} finally {
-  const { spaceId, accessToken } = contentfulConfig
-
-  if (!spaceId || !accessToken) {
-    throw new Error(
-      'Contentful spaceId and the delivery token need to be provided.'
-    )
-  }
-}
+require('dotenv').config()
 
 module.exports = {
   siteMetadata: {
@@ -28,7 +11,10 @@ module.exports = {
     'gatsby-plugin-styled-components',
     {
       resolve: 'gatsby-source-contentful',
-      options: contentfulConfig,
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID || '',
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN || '',
+      },
     },
     {
       resolve: `gatsby-plugin-google-fonts`,
