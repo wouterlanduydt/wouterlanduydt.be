@@ -7,20 +7,38 @@ import Footer from '../components/Footer'
 
 class Home extends Component {
   render() {
-    const siteTitle = this.props.data.site.siteMetadata.title
+    const siteMetadata = this.props.data.site.siteMetadata
+    const { title, email } = siteMetadata
     const projects = this.props.data.allContentfulProject.edges
     const about = this.props.data.allContentfulAbout.edges[0].node
+    const {
+      intro,
+      linkedInLink,
+      githubLink,
+      vimeoLink,
+      instagramLink,
+      twitterLink,
+      spotifyLink,
+    } = about
 
     return (
       <div>
-        <Helmet title={siteTitle} />
+        <Helmet title={title} />
         <Intro
-          intro={about.intro}
-          githubLink={about.githubLink}
-          linkedInLink={about.linkedInLink}
+          intro={intro}
+          githubLink={githubLink}
+          linkedInLink={linkedInLink}
         />
         <ProjectsList projects={projects} />
-        <Footer />
+        <Footer
+          linkedInLink={linkedInLink}
+          githubLink={githubLink}
+          vimeoLink={vimeoLink}
+          instagramLink={instagramLink}
+          twitterLink={twitterLink}
+          spotifyLink={spotifyLink}
+          email={email}
+        />
       </div>
     )
   }
@@ -52,13 +70,18 @@ export const pageQuery = graphql`
               html
             }
           }
-          githubLink
           linkedInLink
+          githubLink
+          vimeoLink
+          instagramLink
+          twitterLink
+          spotifyLink
         }
       }
     }
     site {
       siteMetadata {
+        email
         title
       }
     }

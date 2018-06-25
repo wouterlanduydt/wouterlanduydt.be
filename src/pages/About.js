@@ -7,7 +7,19 @@ const About = props => {
   const siteMetadata = props.data.site.siteMetadata
   const { title, email } = siteMetadata
   const about = props.data.allContentfulAbout.edges[0].node
-  const { aboutTitle, aboutText, iKnow, iLove, resume } = about
+  const {
+    aboutTitle,
+    aboutText,
+    iKnow,
+    iLove,
+    resume,
+    linkedInLink,
+    githubLink,
+    vimeoLink,
+    instagramLink,
+    twitterLink,
+    spotifyLink,
+  } = about
 
   return (
     <div>
@@ -20,7 +32,15 @@ const About = props => {
         resume={resume}
         email={email}
       />
-      <Footer />
+      <Footer
+        linkedInLink={linkedInLink}
+        githubLink={githubLink}
+        vimeoLink={vimeoLink}
+        instagramLink={instagramLink}
+        twitterLink={twitterLink}
+        spotifyLink={spotifyLink}
+        email={email}
+      />
     </div>
   )
 }
@@ -45,6 +65,12 @@ export const pageQuery = graphql`
               url
             }
           }
+          linkedInLink
+          githubLink
+          vimeoLink
+          instagramLink
+          twitterLink
+          spotifyLink
         }
       }
     }

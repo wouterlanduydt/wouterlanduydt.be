@@ -7,7 +7,9 @@ import Footer from '../components/Footer'
 
 const ProjectTemplate = props => {
   const siteTitle = props.data.site.siteMetadata.title
+  const email = props.data.site.siteMetadata.title
   const project = props.data.contentfulProject
+  const about = props.data.allContentfulAbout.edges[0].node
   const {
     title,
     subtitle,
@@ -19,6 +21,14 @@ const ProjectTemplate = props => {
     link,
     detailImages,
   } = project
+  const {
+    linkedInLink,
+    githubLink,
+    vimeoLink,
+    instagramLink,
+    twitterLink,
+    spotifyLink,
+  } = about
 
   return (
     <div>
@@ -36,7 +46,15 @@ const ProjectTemplate = props => {
         detailImages={detailImages}
         link={link}
       />
-      <Footer />
+      <Footer
+        linkedInLink={linkedInLink}
+        githubLink={githubLink}
+        vimeoLink={vimeoLink}
+        instagramLink={instagramLink}
+        twitterLink={twitterLink}
+        spotifyLink={spotifyLink}
+        email={email}
+      />
     </div>
   )
 }
@@ -59,8 +77,21 @@ export const pageQuery = graphql`
         }
       }
     }
+    allContentfulAbout {
+      edges {
+        node {
+          linkedInLink
+          githubLink
+          vimeoLink
+          instagramLink
+          twitterLink
+          spotifyLink
+        }
+      }
+    }
     site {
       siteMetadata {
+        email
         title
       }
     }
