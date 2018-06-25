@@ -21,10 +21,9 @@ const List = styled.ol`
 const ProjectWrapper = styled.div`
   width: 100%;
   height: auto;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 
   @media (min-width: ${props => props.theme.breakpoints.md}) {
-    margin-bottom: 24px;
     width: 49%;
   }
 `

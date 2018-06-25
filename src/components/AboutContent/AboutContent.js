@@ -15,7 +15,7 @@ const Title = styled.h2`
 `
 
 const ButtonWrapper = styled.div`
-  margin: 48px 0 80px;
+  margin: 40px 0 72px;
 
   a:not(:last-child) {
     margin-right: 16px;
@@ -35,7 +35,7 @@ const List = styled.ul`
 const ListItem = styled.li`
   font-size: 1.8em;
   font-weight: ${props => props.theme.fontWeights.bold};
-  margin: 2px 0;
+  margin: 4px 0;
   display: flex;
 
   &:not(:last-child)::after {
@@ -67,7 +67,7 @@ const AboutContent = ({
     </ButtonWrapper>
     {iKnow && (
       <div>
-        <SubTitle>What I Know</SubTitle>
+        <SubTitle>What I Use(d)</SubTitle>
         <List>{iKnow.map(item => <ListItem>{item}</ListItem>)}</List>
       </div>
     )}

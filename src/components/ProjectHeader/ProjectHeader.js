@@ -2,6 +2,7 @@ import React from 'react'
 import styled, { css } from 'styled-components'
 import format from 'date-fns/format'
 import Link from 'gatsby-link'
+import Arrow from '../../assets/svg/arrow.svg'
 
 const Wrapper = styled.div`
   background-color: ${props => props.theme.palette.dark};
@@ -16,14 +17,17 @@ const InnerWrapper = styled.header`
 
 const BackButton = styled(Link)`
   display: inline-block;
-  color: ${props => props.theme.palette.light};
-
-  font-size: 1.4em;
   margin-top: 16px;
+  height: 16px;
 `
 
 const Title = styled.h1`
   padding: 40px 0 4px;
+  font-size: 3.8em;
+
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+    font-size: 5.2em;
+  }
 `
 
 const SubtitleWrapper = styled.div`
@@ -32,25 +36,35 @@ const SubtitleWrapper = styled.div`
 `
 
 const Subtitle = styled.span`
-  font-size: 2em;
+  font-size: 1.8em;
   line-height: 0.96em;
   font-weight: ${props => props.theme.fontWeights.regular};
-  margin: 8px 8px 0 0;
+  margin: 6px 8px 0 0;
+
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+    font-size: 2em;
+  }
 `
 
 const PublishedDate = styled.span`
-  font-size: 1.6em;
+  font-size: 1.4em;
   text-transform: uppercase;
+
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+    font-size: 1.6em;
+  }
 `
 
 const StatsList = styled.ol`
   display: flex;
-  padding: 56px 0 64px;
+  flex-wrap: wrap;
+  padding: 56px 0 16px;
 `
 
 const Stat = styled.li`
   display: flex;
   flex-direction: column;
+  margin-bottom: 40px;
 
   &:not(:last-child) {
     margin-right: 32px;
@@ -111,7 +125,9 @@ const ProjectHeader = ({
   return (
     <Wrapper>
       <InnerWrapper>
-        <BackButton to="/">Back</BackButton>
+        <BackButton to="/">
+          <img src={Arrow} alt="" />
+        </BackButton>
         <Title>{title}</Title>
         <SubtitleWrapper>
           <Subtitle>{subtitle}</Subtitle>
