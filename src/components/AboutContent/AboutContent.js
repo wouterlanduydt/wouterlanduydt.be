@@ -9,22 +9,39 @@ const Wrapper = styled.div`
 `
 
 const Title = styled.h2`
-  font-size: 4.2em;
+  font-size: 3.8em;
   line-height: 1.2em;
-  padding: 64px 0;
+  padding: 40px 0;
+
+  @media (min-width: ${props => props.theme.breakpoints.about}) {
+    font-size: 4.2em;
+    padding: 64px 0;
+  }
 `
 
 const ButtonWrapper = styled.div`
-  margin: 40px 0 72px;
+  margin: 32px 0 64px;
 
   a:not(:last-child) {
     margin-right: 16px;
+  }
+
+  a:last-child {
+    margin-top: 8px;
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.about}) {
+    margin: 40px 0 72px;
   }
 `
 
 const SubTitle = styled.h3`
   font-size: 2.4em;
-  margin: 48px 0 8px;
+  margin: 40px 0 8px;
+
+  @media (min-width: ${props => props.theme.breakpoints.about}) {
+    margin: 48px 0 8px;
+  }
 `
 
 const List = styled.ul`

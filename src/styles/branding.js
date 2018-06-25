@@ -47,6 +47,7 @@ const grid = {
 
 const breakpoints = {
   md: '860px',
+  about: '648px',
   sm: '540px',
   xs: '460px',
 }
