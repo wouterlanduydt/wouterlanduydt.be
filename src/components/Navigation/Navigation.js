@@ -39,10 +39,16 @@ const PagesList = styled.ol`
   display: flex;
   flex: 0 1 auto;
   margin-left: auto;
+
+  .nav-item:not(:last-child) {
+    margin-right: 16px;
+  }
 `
 
 const StyledLink = styled(Link)`
-  font-size: 1.6em;
+  display: inline-block;
+  font-size: 1.4em;
+  letter-spacing: 2px;
   color: ${props => props.theme.palette.light};
   text-transform: uppercase;
 `
@@ -54,7 +60,7 @@ const Navigation = () => (
         <Logo src={LogoImage} alt="" />
       </LogoLink>
       <PagesList>
-        <li>
+        <li className="nav-item">
           <StyledLink to="/about">About</StyledLink>
         </li>
       </PagesList>

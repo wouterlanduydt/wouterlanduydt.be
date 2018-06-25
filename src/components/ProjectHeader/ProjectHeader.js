@@ -125,9 +125,9 @@ const ProjectHeader = ({
   return (
     <Wrapper>
       <InnerWrapper>
-        <BackButton to="/">
+        {/* <BackButton to="/">
           <img src={Arrow} alt="" />
-        </BackButton>
+        </BackButton> */}
         <Title>{title}</Title>
         <SubtitleWrapper>
           <Subtitle>{subtitle}</Subtitle>

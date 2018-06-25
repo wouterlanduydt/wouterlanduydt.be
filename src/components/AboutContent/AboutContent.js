@@ -9,7 +9,7 @@ const Wrapper = styled.div`
 `
 
 const Title = styled.h2`
-  font-size: 3.8em;
+  font-size: 3.6em;
   line-height: 1.2em;
   padding: 40px 0;
 
