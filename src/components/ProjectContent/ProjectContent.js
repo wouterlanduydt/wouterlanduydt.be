@@ -18,16 +18,20 @@ const Text = styled.div`
 `
 
 const ButtonWrapper = styled.div`
-  margin: 32px 0 80px;
+  margin: 32px 0 40px;
+
+  @media (min-width: ${props => props.theme.breakpoints.sm}) {
+    margin: 32px 0 80px;
+  }
 `
 
 const Movie = styled.div`
   width: 100%;
   background-color: ${props => props.theme.palette.loading};
-
   position: relative;
   padding-bottom: 56.3%;
   overflow: hidden;
+  margin-bottom: 32px;
 
   iframe,
   object,
