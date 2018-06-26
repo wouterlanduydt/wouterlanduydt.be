@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Helmet from 'react-helmet'
 import { ThemeProvider, injectGlobal } from 'styled-components'
 import branding from '../styles/branding'
 import global from '../styles/global'
@@ -22,6 +23,9 @@ class Template extends Component {
     return (
       <ThemeProvider theme={branding}>
         <div>
+          <Helmet>
+            <meta name="theme-color" content="#ffffff" />
+          </Helmet>
           <Navigation />
           {children()}
         </div>

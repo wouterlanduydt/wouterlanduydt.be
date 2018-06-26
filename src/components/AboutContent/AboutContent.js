@@ -85,13 +85,13 @@ const AboutContent = ({
     {iKnow && (
       <div>
         <SubTitle>What I Use(d)</SubTitle>
-        <List>{iKnow.map(item => <ListItem>{item}</ListItem>)}</List>
+        <List>{iKnow.map(item => <ListItem key={item}>{item}</ListItem>)}</List>
       </div>
     )}
     {iLove && (
       <div>
         <SubTitle>What I Love</SubTitle>
-        <List>{iLove.map(item => <ListItem>{item}</ListItem>)}</List>
+        <List>{iLove.map(item => <ListItem key={item}>{item}</ListItem>)}</List>
       </div>
     )}
   </Wrapper>
