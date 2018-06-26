@@ -3,6 +3,7 @@ import { css } from 'styled-components'
 const palette = {
   light: '#ffffff',
   dark: '#000000',
+  loading: 'rgb(229,227,223)',
 }
 
 const fontFamilies = {

@@ -134,8 +134,8 @@ const ProjectHeader = ({
           <PublishedDate>- {format(date, 'MMM YYYY')}</PublishedDate>
         </SubtitleWrapper>
         <StatsList>
-          {teamMembers.length > 1 &&
-            teamMembers && (
+          {teamMembers &&
+            teamMembers.length > 1 && (
               <Stat>
                 <StatTitle>Team</StatTitle>
                 <ul>

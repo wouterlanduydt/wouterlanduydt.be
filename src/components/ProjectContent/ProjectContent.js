@@ -21,6 +21,25 @@ const ButtonWrapper = styled.div`
   margin: 32px 0 80px;
 `
 
+const Movie = styled.div`
+  width: 100%;
+  background-color: ${props => props.theme.palette.loading};
+
+  position: relative;
+  padding-bottom: 56.3%;
+  overflow: hidden;
+
+  iframe,
+  object,
+  embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+`
+
 const StyledImage = styled.img`
   display: block;
   width: 100%;
@@ -31,7 +50,7 @@ const StyledImage = styled.img`
   }
 `
 
-const ProjectContent = ({ description, detailImages, link }) => (
+const ProjectContent = ({ description, images, projectVideo, link }) => (
   <Wrapper>
     <Text
       dangerouslySetInnerHTML={{
@@ -41,8 +60,13 @@ const ProjectContent = ({ description, detailImages, link }) => (
     <ButtonWrapper>
       <Button link={link} text="Online" target="_blank" />
     </ButtonWrapper>
-    {detailImages &&
-      detailImages.map(image => (
+    {projectVideo && (
+      <Movie>
+        <iframe src={projectVideo} allowFullScreen />
+      </Movie>
+    )}
+    {images &&
+      images.map(image => (
         <StyledImage src={image.file.url} key={image.file.url} alt="" />
       ))}
   </Wrapper>

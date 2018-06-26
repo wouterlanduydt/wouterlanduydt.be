@@ -1,11 +1,8 @@
 {
-  "name": "gatsby-contentful-starter",
-  "description": "Starter Contentful Gatsby Blog",
+  "name": "wouter-landuydt",
+  "description": "Portfolio of Wouter Landuydt",
   "version": "1.0.0",
-  "author": "Stefan Judis <stefanjudis@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/contentful-userland/gatsby-contentful-starter/issues"
-  },
+  "author": "Wouter Landuydt <wouter.landuydt@gmail.com>",
   "dependencies": {
     "contentful-import": "^6.2.0",
     "date-fns": "^1.29.0",

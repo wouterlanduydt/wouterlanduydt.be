@@ -19,8 +19,10 @@ const ProjectTemplate = props => {
     client,
     date,
     link,
-    detailImages,
+    images,
+    projectVideo,
   } = project
+
   const {
     linkedInLink,
     githubLink,
@@ -43,7 +45,8 @@ const ProjectTemplate = props => {
       />
       <ProjectContent
         description={description}
-        detailImages={detailImages}
+        projectVideo={projectVideo}
+        images={images}
         link={link}
       />
       <Footer
@@ -71,6 +74,12 @@ export const pageQuery = graphql`
       link
       teamMembers
       date
+      projectVideo
+      images {
+        file {
+          url
+        }
+      }
       description {
         childMarkdownRemark {
           html
@@ -97,9 +106,3 @@ export const pageQuery = graphql`
     }
   }
 `
-
-// detailImages {
-//   file {
-//     url
-//   }
-// }
