@@ -19,6 +19,18 @@ const Title = styled.h2`
   }
 `
 
+const Intro = styled.div`
+  p:not(:last-child) {
+    margin-bottom: 22px;
+  }
+
+  a {
+    color: ${props => props.theme.palette.dark};
+    text-decoration: underline;
+    font-weight: ${props => props.theme.fontWeights.bold};
+  }
+`
+
 const ButtonWrapper = styled.div`
   margin: 32px 0 64px;
 
@@ -72,7 +84,7 @@ const AboutContent = ({
 }) => (
   <Wrapper>
     <Title>{aboutTitle}</Title>
-    <div
+    <Intro
       dangerouslySetInnerHTML={{
         __html: aboutText.childMarkdownRemark.html,
       }}

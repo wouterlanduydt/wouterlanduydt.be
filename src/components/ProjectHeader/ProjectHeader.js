@@ -139,9 +139,11 @@ const ProjectHeader = ({
               <Stat>
                 <StatTitle>Team</StatTitle>
                 <ul>
-                  {teamMembers.map(member => (
-                    <StatContentLi key={member}>{member}</StatContentLi>
-                  ))}
+                  {teamMembers
+                    .sort()
+                    .map(member => (
+                      <StatContentLi key={member}>{member}</StatContentLi>
+                    ))}
                 </ul>
               </Stat>
             )}

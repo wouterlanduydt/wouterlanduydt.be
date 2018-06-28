@@ -13,7 +13,13 @@ const Text = styled.div`
   margin-top: 56px;
 
   p:not(:last-child) {
-    margin-bottom: 16px;
+    margin-bottom: 22px;
+  }
+
+  a {
+    color: ${props => props.theme.palette.dark};
+    text-decoration: underline;
+    font-weight: ${props => props.theme.fontWeights.bold};
   }
 `
 
