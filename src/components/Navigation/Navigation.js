@@ -15,20 +15,28 @@ const Wrapper = styled.div`
 const Nav = styled.nav`
   display: flex;
   align-items: center;
-  justify-content: flex-start;
   margin: 0 auto;
   height: 100%;
-  position: relative;
   width: ${props => props.theme.grid.container};
   max-width: ${props => props.theme.grid.maxWidth};
+
+  .bar-item {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+    &:first-child {
+      margin-right: auto;
+    }
+
+    &:last-child {
+      margin-left: auto;
+      justify-content: flex-end;
+    }
+  }
 `
 
-const LogoLink = styled(Link)`
-  flex: 0 1 auto;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-`
+const LogoLink = styled(Link)``
 
 const Logo = styled.img`
   height: 40px;
@@ -38,7 +46,6 @@ const Logo = styled.img`
 
 const PagesList = styled.ol`
   display: flex;
-  flex: 0 1 auto;
   margin-left: auto;
 
   .nav-item:not(:last-child) {
@@ -60,10 +67,11 @@ const Navigation = () => (
       <header style={{ display: 'none' }}>
         <h2>Main Navigation</h2>
       </header>
-      <LogoLink to="/" aria-label="home">
+      <div className="bar-item" />
+      <LogoLink className="bar-item" to="/" aria-label="home">
         <Logo src={LogoImage} alt="" />
       </LogoLink>
-      <PagesList>
+      <PagesList className="bar-item">
         <li className="nav-item">
           <StyledLink to="/about">About</StyledLink>
         </li>
