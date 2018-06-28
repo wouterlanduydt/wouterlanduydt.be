@@ -32,7 +32,8 @@ const LogoLink = styled(Link)`
 
 const Logo = styled.img`
   height: 40px;
-  width: 60px;
+  width: auto;
+  padding: 0 10px;
 `
 
 const PagesList = styled.ol`

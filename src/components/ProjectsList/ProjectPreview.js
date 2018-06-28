@@ -32,7 +32,7 @@ const Overlay = styled.header`
   background-color: ${props => props.theme.palette.dark};
   overflow: hidden;
   width: 100%;
-  height: 48px;
+  height: 80px;
   transform: translateY(80px);
   transform-origin: center bottom;
   transition: transform 300ms ease-out;
