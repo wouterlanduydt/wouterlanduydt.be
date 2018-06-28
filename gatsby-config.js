@@ -4,6 +4,12 @@ module.exports = {
   siteMetadata: {
     title: `Wouter Landuydt`,
     email: `wouter.landuydt@gmail.com`,
+    author: 'Wouter Landuydt <wouter.landuydt@gmail.com>',
+    description:
+      'Portfolio of Wouter Landuydt. Devine 2018 alumni. Front-end developer with eye for design.',
+    coverImage: '',
+    url: 'https://www.wouterlanduydt.be',
+    keywords: 'portfolio, devine, front-end, developer, designer, antwerp',
   },
   plugins: [
     'gatsby-transformer-remark',
