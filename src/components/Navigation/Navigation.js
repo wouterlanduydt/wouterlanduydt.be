@@ -18,9 +18,6 @@ const StyledHeadroom = styled(Headroom)`
     transform: translateY(0);
   }
   .headroom--scrolled {
-    .logo {
-      transform: scale(0.8);
-    }
     transition: transform 150ms ease-in-out;
   }
   .headroom--unpinned {
@@ -63,7 +60,6 @@ const Logo = styled.img`
   height: 40px;
   width: 57px;
   padding: 0 10px;
-  transition: transform 150ms ease-in-out;
 `
 
 const PagesList = styled.ol`
