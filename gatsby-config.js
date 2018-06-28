@@ -7,7 +7,8 @@ module.exports = {
     author: 'Wouter Landuydt <wouter.landuydt@gmail.com>',
     description:
       'Portfolio of Wouter Landuydt. Devine 2018 alumni. Front-end developer with eye for design.',
-    coverImage: '',
+    coverImage:
+      'https://images.ctfassets.net/9ivj8jmhqi2h/6BDeJkiPvimq4qoUqYAAOS/f201b9c16891cd6b971d977b8ce51e21/sos_01.jpg',
     url: 'https://www.wouterlanduydt.be',
     keywords: 'portfolio, devine, front-end, developer, designer, antwerp',
   },

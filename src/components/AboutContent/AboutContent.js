@@ -64,7 +64,7 @@ const List = styled.ul`
 const ListItem = styled.li`
   font-size: 1.8em;
   font-weight: ${props => props.theme.fontWeights.bold};
-  margin: 4px 0;
+  margin: 2px 0;
   display: flex;
 
   &:not(:last-child)::after {
