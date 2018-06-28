@@ -40,7 +40,7 @@ const LogoLink = styled(Link)``
 
 const Logo = styled.img`
   height: 40px;
-  width: auto;
+  width: 57px;
   padding: 0 10px;
 `
 
