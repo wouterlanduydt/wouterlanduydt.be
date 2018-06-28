@@ -38,7 +38,8 @@ class Template extends Component {
             <meta name="author" content={author} />
             <meta itemprop="name" content={title} />
             <meta name="description" content={description} />
-            <meta name="keywords" content={keywords} />>
+            <meta name="keywords" content={keywords} />
+            <meta name="image" content={coverImage} />
             <meta itemprop="description" content={description} />
             <meta itemprop="image" content={coverImage} />
             <meta property="og:url" content={url} />
