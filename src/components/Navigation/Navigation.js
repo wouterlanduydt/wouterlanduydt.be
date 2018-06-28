@@ -59,7 +59,7 @@ const Navigation = () => (
       <header style={{ display: 'none' }}>
         <h2>Main Navigation</h2>
       </header>
-      <LogoLink to="/">
+      <LogoLink to="/" aria-label="home">
         <Logo src={LogoImage} alt="" />
       </LogoLink>
       <PagesList>

@@ -16,6 +16,19 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: 'Wouter Landuydt',
+        short_name: 'Wouter',
+        start_url: '/',
+        background_color: '#000000',
+        theme_color: '#ffffff',
+        display: 'minimal-ui',
+        icon: 'src/assets/icon.png',
+      },
+    },
+    'gatsby-plugin-offline',
+    {
       resolve: 'gatsby-source-contentful',
       options: {
         spaceId: process.env.CONTENTFUL_SPACE_ID || '',

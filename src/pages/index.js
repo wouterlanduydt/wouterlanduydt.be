@@ -22,7 +22,7 @@ class Home extends Component {
     } = about
 
     return (
-      <div>
+      <div role="main">
         <Helmet title={title} />
         <Intro
           intro={intro}

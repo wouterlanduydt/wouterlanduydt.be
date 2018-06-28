@@ -21,7 +21,11 @@ const StyledLink = styled.a`
 `
 
 const Button = ({ link, text, target }) => (
-  <StyledLink href={link} target={target}>
+  <StyledLink
+    href={link}
+    target={target}
+    rel={target === '_blank' && 'noopener'}
+  >
     {text}
   </StyledLink>
 )

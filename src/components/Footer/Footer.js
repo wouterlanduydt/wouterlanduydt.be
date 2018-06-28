@@ -53,32 +53,32 @@ const Footer = ({
         </a>
       </SocialItem>
       <SocialItem>
-        <a href={linkedInLink} target="_blank">
+        <a href={linkedInLink} target="_blank" rel="noopener">
           <SocialIcon src={LinkedIn} alt="LinkedIn icon" />
         </a>
       </SocialItem>
       <SocialItem>
-        <a href={githubLink} target="_blank">
+        <a href={githubLink} target="_blank" rel="noopener">
           <SocialIcon src={Github} alt="Github icon" />
         </a>
       </SocialItem>
       <SocialItem>
-        <a href={vimeoLink} target="_blank">
+        <a href={vimeoLink} target="_blank" rel="noopener">
           <SocialIcon src={Vimeo} alt="Vimeo icon" />
         </a>
       </SocialItem>
       <SocialItem>
-        <a href={twitterLink} target="_blank">
+        <a href={twitterLink} target="_blank" rel="noopener">
           <SocialIcon src={Twitter} alt="Twitter icon" />
         </a>
       </SocialItem>
       <SocialItem>
-        <a href={instagramLink} target="_blank">
+        <a href={instagramLink} target="_blank" rel="noopener">
           <SocialIcon src={Instagram} alt="Instagram icon" />
         </a>
       </SocialItem>
       <SocialItem>
-        <a href={spotifyLink} target="_blank">
+        <a href={spotifyLink} target="_blank" rel="noopener">
           <SocialIcon src={Spotify} alt="Spotify icon" />
         </a>
       </SocialItem>

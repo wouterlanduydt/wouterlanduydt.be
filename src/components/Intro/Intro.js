@@ -102,12 +102,12 @@ const Intro = ({ intro, githubLink, linkedInLink }) => (
       />
       <LinkList>
         <LinkItem>
-          <LinkText href={linkedInLink} target="_blank">
+          <LinkText href={linkedInLink} target="_blank" rel="noopener">
             LinkedIn
           </LinkText>
         </LinkItem>
         <LinkItem>
-          <LinkText href={githubLink} target="_blank">
+          <LinkText href={githubLink} target="_blank" rel="noopener">
             GitHub
           </LinkText>
         </LinkItem>

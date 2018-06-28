@@ -33,7 +33,7 @@ const ProjectTemplate = props => {
   } = about
 
   return (
-    <div>
+    <div role="main">
       <Helmet title={`${siteTitle} | ${title}`} />
       <ProjectHeader
         title={title}
