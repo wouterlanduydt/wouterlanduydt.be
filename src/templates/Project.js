@@ -34,7 +34,7 @@ const ProjectTemplate = props => {
 
   return (
     <div>
-      <Helmet title={`${title} | ${siteTitle}`} />
+      <Helmet title={`${siteTitle} | ${title}`} />
       <ProjectHeader
         title={title}
         subtitle={subtitle}

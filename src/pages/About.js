@@ -23,7 +23,7 @@ const About = props => {
 
   return (
     <div>
-      <Helmet title={`About | ${title}`} />
+      <Helmet title={`${title} | About`} />
       <AboutContent
         aboutTitle={aboutTitle}
         aboutText={aboutText}
