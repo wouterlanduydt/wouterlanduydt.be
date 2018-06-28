@@ -1,15 +1,36 @@
 import React from 'react'
 import styled from 'styled-components'
 import Link from 'gatsby-link'
+import Headroom from 'react-headroom'
 import LogoImage from '../../assets/svg/logo.svg'
 
-const Wrapper = styled.div`
-  background-color: ${props => props.theme.palette.dark};
-  position: fixed;
-  top: 0;
-  z-index: 9999;
-  height: 72px;
-  width: 100%;
+const StyledHeadroom = styled(Headroom)`
+  .headroom {
+    height: 72px !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+    background-color: ${props => props.theme.palette.dark};
+  }
+  .headroom--unfixed {
+    position: relative;
+    transform: translateY(0);
+  }
+  .headroom--scrolled {
+    .logo {
+      transform: scale(0.8);
+    }
+    transition: transform 150ms ease-in-out;
+  }
+  .headroom--unpinned {
+    position: fixed;
+    transform: translateY(-72px);
+  }
+  .headroom--pinned {
+    position: fixed;
+    transform: translateY(0px);
+  }
 `
 
 const Nav = styled.nav`
@@ -42,6 +63,7 @@ const Logo = styled.img`
   height: 40px;
   width: 57px;
   padding: 0 10px;
+  transition: transform 150ms ease-in-out;
 `
 
 const PagesList = styled.ol`
@@ -62,14 +84,14 @@ const StyledLink = styled(Link)`
 `
 
 const Navigation = () => (
-  <Wrapper role="navigation">
+  <StyledHeadroom disableInlineStyles role="navigation">
     <Nav>
       <header style={{ display: 'none' }}>
         <h2>Main Navigation</h2>
       </header>
       <div className="bar-item" />
       <LogoLink className="bar-item" to="/" aria-label="home">
-        <Logo src={LogoImage} alt="" />
+        <Logo src={LogoImage} alt="" className="logo" />
       </LogoLink>
       <PagesList className="bar-item">
         <li className="nav-item">
@@ -77,7 +99,7 @@ const Navigation = () => (
         </li>
       </PagesList>
     </Nav>
-  </Wrapper>
+  </StyledHeadroom>
 )
 
 export default Navigation
