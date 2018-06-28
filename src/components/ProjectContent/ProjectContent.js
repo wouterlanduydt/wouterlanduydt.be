@@ -37,7 +37,11 @@ const Movie = styled.div`
   position: relative;
   padding-bottom: 56.3%;
   overflow: hidden;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
+
+  @media (min-width: ${props => props.theme.breakpoints.sm}) {
+    margin-bottom: 32px;
+  }
 
   iframe,
   object,
@@ -56,7 +60,11 @@ const StyledImage = styled.img`
   height: auto;
 
   &:not(:last-child) {
-    margin-bottom: 32px;
+    margin-bottom: 16px;
+
+    @media (min-width: ${props => props.theme.breakpoints.sm}) {
+      margin-bottom: 32px;
+    }
   }
 `
 

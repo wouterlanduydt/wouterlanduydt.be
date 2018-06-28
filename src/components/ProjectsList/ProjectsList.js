@@ -21,7 +21,11 @@ const List = styled.ol`
 const ProjectWrapper = styled.div`
   width: 100%;
   height: auto;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
+
+  @media (min-width: ${props => props.theme.breakpoints.sm}) {
+    margin-bottom: 24px;
+  }
 
   @media (min-width: ${props => props.theme.breakpoints.md}) {
     width: 49%;
