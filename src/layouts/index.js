@@ -34,6 +34,7 @@ class Template extends Component {
       <ThemeProvider theme={branding}>
         <div>
           <Helmet>
+            <html lang="en" />
             <meta name="author" content={author} />
             <meta itemprop="name" content={title} />
             <meta name="description" content={description} />
@@ -51,6 +52,9 @@ class Template extends Component {
             <meta name="twitter:image" content={coverImage} />
             <meta name="theme-color" content="#ffffff" />
           </Helmet>
+          <header style={{ display: 'none' }}>
+            <h1>{title}</h1>
+          </header>
           <Navigation />
           {children()}
         </div>

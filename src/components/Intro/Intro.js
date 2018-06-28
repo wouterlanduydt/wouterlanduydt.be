@@ -92,6 +92,9 @@ const LinkText = styled.a`
 const Intro = ({ intro, githubLink, linkedInLink }) => (
   <Wrapper>
     <ContentWrapper>
+      <header style={{ display: 'none' }}>
+        <h2>Intro</h2>
+      </header>
       <Text
         dangerouslySetInnerHTML={{
           __html: intro.childMarkdownRemark.html,

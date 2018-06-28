@@ -56,6 +56,9 @@ const StyledLink = styled(Link)`
 const Navigation = () => (
   <Wrapper role="navigation">
     <Nav>
+      <header style={{ display: 'none' }}>
+        <h2>Main Navigation</h2>
+      </header>
       <LogoLink to="/">
         <Logo src={LogoImage} alt="" />
       </LogoLink>

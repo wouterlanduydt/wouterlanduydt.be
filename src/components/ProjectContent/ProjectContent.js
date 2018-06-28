@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Link from 'gatsby-link'
 import Button from '../Button'
 
-const Wrapper = styled.div`
+const Wrapper = styled.article`
   margin: 0 auto;
   width: ${props => props.theme.grid.container};
   max-width: ${props => props.theme.grid.maxWidth};
@@ -70,6 +70,9 @@ const StyledImage = styled.img`
 
 const ProjectContent = ({ description, images, projectVideo, link }) => (
   <Wrapper>
+    <header style={{ display: 'none' }}>
+      <h1>Project Description</h1>
+    </header>
     <Text
       dangerouslySetInnerHTML={{
         __html: description.childMarkdownRemark.html,

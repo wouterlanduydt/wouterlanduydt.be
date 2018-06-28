@@ -39,7 +39,7 @@ const Overlay = styled.header`
   padding: 16px;
 `
 
-const Title = styled.h2`
+const Title = styled.h3`
   color: ${props => props.theme.palette.light};
   margin: 2px 0 8px;
 `
@@ -62,17 +62,15 @@ const ProjectPreview = ({ project }) => {
   const { slug, previewImage, tags, title } = project
 
   return (
-    <li>
-      <StyledLink to={`/projects/${slug}`}>
-        <Image src={previewImage.file.url} alt="" className="image" />
-        <Overlay className="overlay">
-          <Title>{title}</Title>
-          <TagsList>
-            {tags.map(tag => <TagItem key={tag}>{tag}</TagItem>)}
-          </TagsList>
-        </Overlay>
-      </StyledLink>
-    </li>
+    <StyledLink to={`/projects/${slug}`}>
+      <Image src={previewImage.file.url} alt="" className="image" />
+      <Overlay className="overlay">
+        <Title>{title}</Title>
+        <TagsList>
+          {tags.map(tag => <TagItem key={tag}>{tag}</TagItem>)}
+        </TagsList>
+      </Overlay>
+    </StyledLink>
   )
 }
 

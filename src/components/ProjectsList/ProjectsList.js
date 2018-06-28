@@ -18,7 +18,7 @@ const List = styled.ol`
   justify-content: space-between;
 `
 
-const ProjectWrapper = styled.div`
+const ProjectWrapper = styled.li`
   width: 100%;
   height: auto;
   margin-bottom: 16px;
@@ -34,6 +34,9 @@ const ProjectWrapper = styled.div`
 
 const ProjectsList = ({ projects }) => (
   <Wrapper>
+    <header style={{ display: 'none' }}>
+      <h2>Projects</h2>
+    </header>
     <List>
       {projects.map(({ node }) => (
         <ProjectWrapper key={node.slug}>
