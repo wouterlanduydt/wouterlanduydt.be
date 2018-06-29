@@ -1,2 +1,0 @@
-# Redirect default Netlify subdomain to primary domain
-https://wouterlanduydt.netlify.com/* https://wouterlanduydt.be/:splat 301!
