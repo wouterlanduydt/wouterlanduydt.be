@@ -1,7 +1,11 @@
 [[redirects]]
   from = "https://wouterlanduydt.netlify.com/*"
   to = "https://wouterlanduydt.be/:splat"
+  status = 301
+  force = true
 
 [[redirects]]
   from = "https://www.wouterlanduydt.be/*"
   to = "https://wouterlanduydt.be/:splat"
+  status = 301
+  force = true
