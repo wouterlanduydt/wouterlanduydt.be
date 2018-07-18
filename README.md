@@ -1,3 +1,3 @@
-# Portfolio [![Build Status](https://travis-ci.com/wouterlanduydt/wouterlanduydt.github.io.svg?token=u2AQGEMwXKL27DXHpDx9&branch=v2.0)](https://travis-ci.com/wouterlanduydt/wouterlanduydt.github.io)
+# Portfolio [![Build Status](https://travis-ci.com/wouterlanduydt/wouterlanduydt.be.svg?branch=master)](https://travis-ci.com/wouterlanduydt/wouterlanduydt.be)
 
 My portfolio build with Gatsby and Contentful.
