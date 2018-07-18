@@ -17,6 +17,16 @@ const SocialsList = styled.ol`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &:hover .social-item {
+    transition: opacity 200ms;
+    opacity: 0.2;
+  }
+
+  .social-item:hover {
+    transition: opacity 200ms;
+    opacity: 1;
+  }
 `
 
 const SocialItem = styled.li`
@@ -29,11 +39,6 @@ const SocialItem = styled.li`
 
 const SocialIcon = styled.img`
   transform: scale(0.8);
-  transition: transform 150ms ease-in-out;
-
-  &:hover {
-    transform: scale(0.9);
-  }
 `
 
 const Footer = ({
@@ -47,37 +52,37 @@ const Footer = ({
 }) => (
   <Wrapper>
     <SocialsList>
-      <SocialItem>
+      <SocialItem className="social-item">
         <a href={`mailto:${email}`}>
           <SocialIcon src={Envelope} alt="Envelope icon" />
         </a>
       </SocialItem>
-      <SocialItem>
+      <SocialItem className="social-item">
         <a href={linkedInLink} target="_blank" rel="noopener">
           <SocialIcon src={LinkedIn} alt="LinkedIn icon" />
         </a>
       </SocialItem>
-      <SocialItem>
+      <SocialItem className="social-item">
         <a href={githubLink} target="_blank" rel="noopener">
           <SocialIcon src={Github} alt="Github icon" />
         </a>
       </SocialItem>
-      <SocialItem>
+      <SocialItem className="social-item">
         <a href={vimeoLink} target="_blank" rel="noopener">
           <SocialIcon src={Vimeo} alt="Vimeo icon" />
         </a>
       </SocialItem>
-      <SocialItem>
+      <SocialItem className="social-item">
         <a href={twitterLink} target="_blank" rel="noopener">
           <SocialIcon src={Twitter} alt="Twitter icon" />
         </a>
       </SocialItem>
-      <SocialItem>
+      <SocialItem className="social-item">
         <a href={instagramLink} target="_blank" rel="noopener">
           <SocialIcon src={Instagram} alt="Instagram icon" />
         </a>
       </SocialItem>
-      <SocialItem>
+      <SocialItem className="social-item">
         <a href={spotifyLink} target="_blank" rel="noopener">
           <SocialIcon src={Spotify} alt="Spotify icon" />
         </a>

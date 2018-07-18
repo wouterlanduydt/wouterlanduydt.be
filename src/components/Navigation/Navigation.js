@@ -54,12 +54,15 @@ const Nav = styled.nav`
   }
 `
 
-const LogoLink = styled(Link)``
-
 const Logo = styled.img`
   height: 40px;
   width: 57px;
   padding: 0 10px;
+  transition: transform 200ms ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 `
 
 const PagesList = styled.ol`
@@ -72,11 +75,24 @@ const PagesList = styled.ol`
 `
 
 const StyledLink = styled(Link)`
-  display: inline-block;
+  display: flex;
   font-size: 1.4em;
   letter-spacing: 2px;
   color: ${props => props.theme.palette.light};
   text-transform: uppercase;
+
+  &:hover::after {
+    transform: scale(1);
+    width: 16px;
+  }
+
+  &::after {
+    content: '→';
+    display: block;
+    width: 0px;
+    transform: scale(0);
+    transition: all 200ms ease-in-out;
+  }
 `
 
 const Navigation = () => (
@@ -86,9 +102,9 @@ const Navigation = () => (
         <h2>Main Navigation</h2>
       </header>
       <div className="bar-item" />
-      <LogoLink className="bar-item" to="/" aria-label="home">
+      <Link className="bar-item" to="/" aria-label="home">
         <Logo src={LogoImage} alt="" className="logo" />
-      </LogoLink>
+      </Link>
       <PagesList className="bar-item">
         <li className="nav-item">
           <StyledLink to="/about">About</StyledLink>

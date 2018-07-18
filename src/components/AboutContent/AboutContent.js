@@ -89,7 +89,6 @@ const AboutContent = ({
         __html: aboutText.childMarkdownRemark.html,
       }}
     />
-    {console.log(`http://localhost:8000/about${resume.file.url}`)}
     <ButtonWrapper>
       <Button text="Email Me" link={`mailto:${email}`} />
       <Button text="My Resume" link={resume.file.url} target="_blank" />
