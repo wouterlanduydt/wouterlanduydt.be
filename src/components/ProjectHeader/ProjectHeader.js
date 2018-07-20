@@ -58,7 +58,7 @@ const PublishedDate = styled.span`
 const StatsList = styled.ol`
   display: flex;
   flex-wrap: wrap;
-  padding: 56px 0 16px;
+  padding: 40px 0px 8px;
 `
 
 const Stat = styled.li`
