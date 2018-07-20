@@ -151,10 +151,12 @@ const ProjectHeader = ({
             <StatTitle>Category</StatTitle>
             <TagsList>{getTagsItems(tags)}</TagsList>
           </Stat>
-          <Stat>
-            <StatTitle>Client</StatTitle>
-            <StatContent>{client}</StatContent>
-          </Stat>
+          {client && (
+            <Stat>
+              <StatTitle>Client</StatTitle>
+              <StatContent>{client}</StatContent>
+            </Stat>
+          )}
         </StatsList>
       </InnerWrapper>
     </Wrapper>
