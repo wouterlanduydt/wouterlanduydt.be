@@ -1,5 +1,5 @@
 import { css } from 'styled-components'
-import { textStyles, fontWeights, fontFamilies } from './branding'
+import { textStyles, fontWeights, fontFamilies, palette } from './branding'
 
 export default css`
   html {
@@ -39,5 +39,15 @@ export default css`
 
   h3 {
     ${textStyles.heading03};
+  }
+
+  ::selection {
+    color: ${palette.white};
+    background: ${palette.selectionColor};
+  }
+
+  ::-moz-selection {
+    color: ${palette.white};
+    background: ${palette.selectionColor};
   }
 `

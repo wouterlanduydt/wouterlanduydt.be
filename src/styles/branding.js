@@ -3,6 +3,7 @@ import { css } from 'styled-components'
 const palette = {
   light: '#ffffff',
   dark: '#000000',
+  selectionColor: '#0F53ED',
   loading: 'rgb(229,227,223)',
 }
 
