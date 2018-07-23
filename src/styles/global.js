@@ -42,12 +42,12 @@ export default css`
   }
 
   ::selection {
-    color: ${palette.white};
+    color: ${palette.light};
     background: ${palette.selectionColor};
   }
 
   ::-moz-selection {
-    color: ${palette.white};
+    color: ${palette.light};
     background: ${palette.selectionColor};
   }
 `
