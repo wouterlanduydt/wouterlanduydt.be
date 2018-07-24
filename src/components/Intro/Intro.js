@@ -29,6 +29,7 @@ const Text = styled.div`
   }
 
   p {
+    font-weight: ${props => props.theme.fontWeights.medium};
     font-size: 2.4em !important;
 
     @media (min-width: ${props => props.theme.breakpoints.sm}) {

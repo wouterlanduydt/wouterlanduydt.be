@@ -13,7 +13,8 @@ export default css`
   body {
     font-size: 62.5%;
     font-family: ${fontFamilies.openSans};
-    font-weight: ${fontWeights.light};
+    font-weight: ${fontWeights.regular};
+    -webkit-font-smoothing: antialiased;
   }
 
   p {

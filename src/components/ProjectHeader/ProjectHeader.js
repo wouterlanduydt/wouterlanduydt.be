@@ -38,7 +38,7 @@ const SubtitleWrapper = styled.div`
 const Subtitle = styled.span`
   font-size: 1.8em;
   line-height: 0.96em;
-  font-weight: ${props => props.theme.fontWeights.regular};
+  font-weight: ${props => props.theme.fontWeights.medium};
   margin: 6px 8px 0 0;
 
   @media (min-width: ${props => props.theme.breakpoints.md}) {
@@ -48,6 +48,7 @@ const Subtitle = styled.span`
 
 const PublishedDate = styled.span`
   font-size: 1.4em;
+  font-weight: ${props => props.theme.fontWeights.regular};
   text-transform: uppercase;
 
   @media (min-width: ${props => props.theme.breakpoints.md}) {
@@ -74,12 +75,13 @@ const Stat = styled.li`
 const StatTitle = styled.span`
   font-size: 2.2em;
   font-family: ${props => props.theme.fontFamilies.merriweather};
-  font-weight: ${props => props.theme.fontWeights.regular};
+  font-weight: ${props => props.theme.fontWeights.bold};
   margin-bottom: 8px;
 `
 
 const statContentStyling = css`
   font-size: 1.6em;
+  font-weight: ${props => props.theme.fontWeights.medium};
 `
 
 const StatContent = styled.span`
