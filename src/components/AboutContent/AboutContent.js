@@ -9,12 +9,12 @@ const Wrapper = styled.div`
 `
 
 const Title = styled.h2`
-  font-size: 3.6em;
+  font-size: 2.8em;
   line-height: 1.2em;
   padding: 40px 0;
 
   @media (min-width: ${props => props.theme.breakpoints.about}) {
-    font-size: 4.2em;
+    font-size: 3.6em;
     padding: 64px 0;
   }
 `
