@@ -38,9 +38,9 @@ const ProjectsList = ({ projects }) => (
       <h2>Projects</h2>
     </header>
     <List>
-      {projects.map(({ node }) => (
-        <ProjectWrapper key={node.slug}>
-          <ProjectPreview project={node} />
+      {projects.map((project, index) => (
+        <ProjectWrapper key={project.node.slug}>
+          <ProjectPreview project={project.node} index={index} />
         </ProjectWrapper>
       ))}
     </List>
