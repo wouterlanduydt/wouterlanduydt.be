@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import Intro from '../components/home/Intro'
 import ProjectList from '../components/home/ProjectList'
 import Footer from '../components/general/Footer'
+import getSocialsList from '../utils/getSocialsList'
 
 class Home extends Component {
   render() {
@@ -31,13 +32,15 @@ class Home extends Component {
         />
         <ProjectList projects={projects} />
         <Footer
-          linkedInLink={linkedInLink}
-          githubLink={githubLink}
-          vimeoLink={vimeoLink}
-          instagramLink={instagramLink}
-          twitterLink={twitterLink}
-          spotifyLink={spotifyLink}
-          email={email}
+          socialsList={getSocialsList(
+            linkedInLink,
+            githubLink,
+            vimeoLink,
+            instagramLink,
+            twitterLink,
+            spotifyLink,
+            email
+          )}
         />
       </div>
     )
