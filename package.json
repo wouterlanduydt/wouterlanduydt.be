@@ -3,10 +3,16 @@
   "description": "Portfolio of Wouter Landuydt",
   "version": "1.0.0",
   "author": "Wouter Landuydt <wouter.landuydt@gmail.com>",
+  "scripts": {
+    "start": "gatsby develop",
+    "lint": "eslint --ext .js,.jsx --ignore-pattern public .",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md' 'bin/*.js'",
+    "build": "gatsby build",
+    "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix *.js bin/*.js"
+  },
   "dependencies": {
     "contentful-import": "^6.2.0",
     "date-fns": "^1.29.0",
-    "dotenv": "^6.0.0",
     "gatsby-link": "^1.6.34",
     "gatsby-plugin-favicon": "^2.1.1",
     "gatsby-plugin-google-fonts": "^0.0.4",
@@ -26,7 +32,9 @@
   "devDependencies": {
     "babel-eslint": "^8.2.1",
     "chalk": "^2.3.1",
+    "dotenv": "^6.0.0",
     "eslint": "^4.15.0",
+    "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-react": "^7.5.1",
     "gatsby": "^1.9.202",
     "gh-pages": "^1.1.0",
@@ -42,13 +50,5 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wouterlanduydt/wouterlanduydt.be.git"
-  },
-  "scripts": {
-    "start": "gatsby develop",
-    "lint": "eslint --ext .js,.jsx --ignore-pattern public .",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md' 'bin/*.js'",
-    "build": "gatsby build",
-    "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix *.js bin/*.js"
   }
 }

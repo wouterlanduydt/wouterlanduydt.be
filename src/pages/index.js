@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
-import Intro from '../components/Intro'
-import ProjectsList from '../components/ProjectsList'
-import Footer from '../components/Footer'
+import Intro from '../components/home/Intro'
+import ProjectList from '../components/home/ProjectList'
+import Footer from '../components/general/Footer'
 
 class Home extends Component {
   render() {
@@ -29,7 +29,7 @@ class Home extends Component {
           githubLink={githubLink}
           linkedInLink={linkedInLink}
         />
-        <ProjectsList projects={projects} />
+        <ProjectList projects={projects} />
         <Footer
           linkedInLink={linkedInLink}
           githubLink={githubLink}

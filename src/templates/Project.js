@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
-import ProjectHeader from '../components/ProjectHeader'
-import ProjectContent from '../components/ProjectContent'
-import Footer from '../components/Footer'
+import ProjectHeader from '../components/projectDetail/ProjectHeader'
+import ProjectContent from '../components/projectDetail/ProjectContent'
+import Footer from '../components/general/Footer'
 
 const ProjectTemplate = props => {
   const siteTitle = props.data.site.siteMetadata.title

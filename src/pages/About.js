@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import AboutContent from '../components/AboutContent'
-import Footer from '../components/Footer'
+import AboutContent from '../components/about/AboutContent'
+import Footer from '../components/general/Footer'
 
 const About = props => {
   const siteMetadata = props.data.site.siteMetadata
