@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import AboutContent from '../components/about/AboutContent'
 import Footer from '../components/general/Footer'
+import getSocialsList from '../utils/getSocialsList'
 
 const About = props => {
   const siteMetadata = props.data.site.siteMetadata
@@ -33,13 +34,15 @@ const About = props => {
         email={email}
       />
       <Footer
-        linkedInLink={linkedInLink}
-        githubLink={githubLink}
-        vimeoLink={vimeoLink}
-        instagramLink={instagramLink}
-        twitterLink={twitterLink}
-        spotifyLink={spotifyLink}
-        email={email}
+        socialsList={getSocialsList(
+          linkedInLink,
+          githubLink,
+          vimeoLink,
+          instagramLink,
+          twitterLink,
+          spotifyLink,
+          email
+        )}
       />
     </div>
   )
