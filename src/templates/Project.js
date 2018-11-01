@@ -4,6 +4,7 @@ import Link from 'gatsby-link'
 import ProjectHeader from '../components/projectDetail/ProjectHeader'
 import ProjectContent from '../components/projectDetail/ProjectContent'
 import Footer from '../components/general/Footer'
+import getSocialsList from '../utils/getSocialsList'
 
 const ProjectTemplate = props => {
   const siteTitle = props.data.site.siteMetadata.title
@@ -50,13 +51,15 @@ const ProjectTemplate = props => {
         link={link}
       />
       <Footer
-        linkedInLink={linkedInLink}
-        githubLink={githubLink}
-        vimeoLink={vimeoLink}
-        instagramLink={instagramLink}
-        twitterLink={twitterLink}
-        spotifyLink={spotifyLink}
-        email={email}
+        socialsList={getSocialsList(
+          linkedInLink,
+          githubLink,
+          vimeoLink,
+          instagramLink,
+          twitterLink,
+          spotifyLink,
+          email
+        )}
       />
     </div>
   )
