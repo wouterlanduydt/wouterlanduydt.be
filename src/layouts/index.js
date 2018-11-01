@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import Helmet from 'react-helmet'
 import { ThemeProvider, injectGlobal } from 'styled-components'
-import branding from '../styles/branding'
-import global from '../styles/global'
+import branding from 'styles/branding'
+import global from 'styles/global'
 import reset from 'styled-reset'
-import Navigation from '../components/general/Navigation'
+import Navigation from 'components/general/Navigation'
 
 injectGlobal`
   ${reset}
@@ -24,12 +24,6 @@ class Template extends Component {
       url,
       keywords,
     } = siteMetadata
-
-    let rootPath = `/`
-
-    if (typeof __PREFIX_PATHS__ !== `undefined` && __PREFIX_PATHS__) {
-      rootPath = __PATH_PREFIX__ + `/`
-    }
 
     return (
       <ThemeProvider theme={branding}>
@@ -55,7 +49,7 @@ class Template extends Component {
             <meta name="twitter:image" content={coverImage} />
             <meta name="theme-color" content="#ffffff" />
           </Helmet>
-          <header style={{ display: 'none' }}>
+          <header className="hide">
             <h1>{title}</h1>
           </header>
           <Navigation />

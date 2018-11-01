@@ -51,4 +51,8 @@ export default css`
     color: ${palette.light};
     background: ${palette.selectionColor};
   }
+
+  .hide {
+    display: none;
+  }
 `

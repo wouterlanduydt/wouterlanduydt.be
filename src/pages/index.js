@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
-import Intro from '../components/home/Intro'
-import ProjectList from '../components/home/ProjectList'
-import Footer from '../components/general/Footer'
-import getSocialsList from '../utils/getSocialsList'
+import Intro from 'components/home/Intro'
+import ProjectList from 'components/home/ProjectList'
+import Footer from 'components/general/Footer'
+import getSocialsList from 'utils/getSocialsList'
 
 class Home extends Component {
   render() {

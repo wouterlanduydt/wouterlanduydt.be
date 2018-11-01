@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import LogoImage from '../../../assets/svg/logo.svg'
+import LogoImage from 'assets/svg/logo.svg'
 import {
   StyledHeadroom,
   Nav,

@@ -1,6 +1,6 @@
 import React from 'react'
 import format from 'date-fns/format'
-import Arrow from '../../../assets/svg/arrow.svg'
+import Arrow from 'assets/svg/arrow.svg'
 import {
   Wrapper,
   InnerWrapper,

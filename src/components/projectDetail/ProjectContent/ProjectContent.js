@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from '../../general/Button'
+import Button from 'components/general/Button'
 import {
   Wrapper,
   Text,

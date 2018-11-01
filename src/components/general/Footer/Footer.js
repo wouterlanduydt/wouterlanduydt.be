@@ -12,7 +12,7 @@ const Footer = ({ socialsList }) => (
             rel="noopener"
           >
             <SocialIcon
-              src={require(`../../../assets/svg/${socialItem.icon ||
+              src={require(`assets/svg/${socialItem.icon ||
                 socialItem.name}.svg`)}
               alt={socialItem.name}
             />
