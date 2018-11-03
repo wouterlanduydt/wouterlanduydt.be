@@ -10,7 +10,7 @@ exports.createPages = ({ graphql, actions }) => {
       graphql(
         `
           {
-            allContentfulProject(limit: 20) {
+            allContentfulProject(limit: 10) {
               edges {
                 node {
                   slug
