@@ -1,3 +1,3 @@
-# Portfolio [![Build Status](https://travis-ci.com/wouterlanduydt/wouterlanduydt.be.svg?branch=master)](https://travis-ci.com/wouterlanduydt/wouterlanduydt.be)
+# Portfolio
 
-My portfolio build with Gatsby and Contentful.
+My portfolio build with Gatsby, Typescript and Contentful.
