@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-contentful-typescript",
-  "description": "Gatsby Contentful TypeScript starter",
-  "version": "0.3.0",
-  "author": "Filip Havrlent <filip@havrlent.com>",
+  "name": "wouter-landuydt",
+  "description": "Portfolio of Wouter Landuydt",
+  "version": "1.2.0",
+  "author": "Wouter Landuydt <wouter.landuydt@gmail.com>",
   "dependencies": {
     "@types/react-helmet": "^5.0.7",
     "@types/styled-components": "^4.0.3",
@@ -47,6 +47,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/wouterlanduydt/wouterlanduydt.be.git"
   }
 }
