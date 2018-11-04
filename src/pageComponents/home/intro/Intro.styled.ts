@@ -18,7 +18,6 @@ export const ContentWrapper = styled.section`
 
 export const Text = styled.div`
   max-width: ${props => props.theme.grid.maxWidthSm};
-  line-height: 1.3em;
   text-align: center;
   margin-top: 56px;
 
@@ -26,9 +25,36 @@ export const Text = styled.div`
     margin-top: 80px;
   }
 
+  a {
+    color: ${props => props.theme.palette.light};
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      bottom: 2px;
+      width: 95%;
+      height: 2px;
+      background-color: ${props => props.theme.palette.light};
+    }
+
+    &:hover {
+      font-weight: ${props => props.theme.fontWeights.bold};
+
+      &::after {
+        bottom: 1px;
+        height: 3px;
+      }
+    }
+  }
+
   p {
     font-weight: ${props => props.theme.fontWeights.medium};
     font-size: 2.4em !important;
+    line-height: 1.3em;
 
     @media (min-width: ${props => props.theme.breakpoints.sm}) {
       font-size: 2.6em !important;
