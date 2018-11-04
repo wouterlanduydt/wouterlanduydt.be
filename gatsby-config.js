@@ -1,4 +1,11 @@
-require('dotenv').config()
+if (process.env.ENVIROMENT !== 'production') {
+  require('dotenv').config()
+}
+
+const contentfulConfig = {
+  spaceId: process.env.CONTENTFUL_SPACE_ID,
+  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+}
 
 module.exports = {
   siteMetadata: {
@@ -13,7 +20,6 @@ module.exports = {
     keywords: 'portfolio, devine, front-end, developer, designer, antwerp',
   },
   plugins: [
-    'gatsby-transformer-remark',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     {
@@ -29,12 +35,12 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
+    `gatsby-plugin-typescript`,
+    'gatsby-transformer-remark',
+    'gatsby-plugin-sharp',
     {
-      resolve: 'gatsby-source-contentful',
-      options: {
-        spaceId: process.env.CONTENTFUL_SPACE_ID || '',
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN || '',
-      },
+      resolve: `gatsby-source-contentful`,
+      options: contentfulConfig,
     },
     {
       resolve: `gatsby-plugin-google-fonts`,

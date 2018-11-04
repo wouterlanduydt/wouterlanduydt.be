@@ -1,54 +1,52 @@
 {
   "name": "wouter-landuydt",
   "description": "Portfolio of Wouter Landuydt",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "author": "Wouter Landuydt <wouter.landuydt@gmail.com>",
   "dependencies": {
-    "contentful-import": "^6.2.0",
+    "@types/react-helmet": "^5.0.7",
+    "@types/styled-components": "^4.0.3",
     "date-fns": "^1.29.0",
     "dotenv": "^6.0.0",
-    "gatsby-link": "^1.6.34",
-    "gatsby-plugin-favicon": "^2.1.1",
-    "gatsby-plugin-google-fonts": "^0.0.4",
-    "gatsby-plugin-manifest": "^1.0.27",
-    "gatsby-plugin-offline": "^1.0.18",
-    "gatsby-plugin-react-helmet": "^1.0.8",
-    "gatsby-plugin-styled-components": "^2.0.11",
-    "gatsby-source-contentful": "^1.3.38",
-    "gatsby-transformer-remark": "^1.7.32",
-    "inquirer": "^5.1.0",
-    "lodash": "^4.17.4",
-    "react-headroom": "^2.2.2",
-    "styled-components": "^3.3.2",
-    "styled-reset": "^1.3.5",
-    "yargs-parser": "^10.0.0"
+    "gatsby": "^2.0.0",
+    "gatsby-plugin-manifest": "^2.0.2",
+    "gatsby-plugin-offline": "^2.0.5",
+    "gatsby-plugin-react-helmet": "^3.0.0",
+    "gatsby-plugin-sharp": "^2.0.5",
+    "gatsby-plugin-typescript": "^2.0.0",
+    "gatsby-source-contentful": "^2.0.1",
+    "gatsby-transformer-remark": "^2.1.5",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1",
+    "react-headroom": "^2.2.4",
+    "react-helmet": "^5.2.0",
+    "styled-components": "^4.0.3",
+    "styled-reset": "^1.6.0",
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.1"
   },
-  "devDependencies": {
-    "babel-eslint": "^8.2.1",
-    "chalk": "^2.3.1",
-    "eslint": "^4.15.0",
-    "eslint-plugin-react": "^7.5.1",
-    "gatsby": "^1.9.202",
-    "gh-pages": "^1.1.0",
-    "prettier": "^1.10.2"
-  },
-  "homepage": "https://wouterlanduydt.be/about",
   "keywords": [
-    "gatsby",
-    "contentful"
+    "gatsby"
   ],
   "license": "MIT",
-  "main": "n/a",
+  "scripts": {
+    "build": "gatsby build",
+    "start": "gatsby develop",
+    "format": "prettier --write '**/*.tsx'"
+  },
+  "devDependencies": {
+    "@types/date-fns": "^2.6.0",
+    "babel-plugin-styled-components": "^1.8.0",
+    "gatsby-plugin-favicon": "^3.1.4",
+    "gatsby-plugin-google-fonts": "^0.0.4",
+    "gatsby-plugin-root-import": "^2.0.4",
+    "gatsby-plugin-styled-components": "^3.0.1",
+    "prettier": "^1.14.2",
+    "tslint-config-prettier": "^1.15.0",
+    "tslint-react": "^3.6.0"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wouterlanduydt/wouterlanduydt.be.git"
-  },
-  "scripts": {
-    "start": "gatsby develop",
-    "lint": "eslint --ext .js,.jsx --ignore-pattern public .",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md' 'bin/*.js'",
-    "build": "gatsby build",
-    "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix *.js bin/*.js"
+    "url": "https://github.com/wouterlanduydt/wouterlanduydt.be.git"
   }
 }

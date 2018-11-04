@@ -1,16 +1,16 @@
 const Promise = require('bluebird')
 const path = require('path')
 
-exports.createPages = ({ graphql, boundActionCreators }) => {
-  const { createPage } = boundActionCreators
+exports.createPages = ({ graphql, actions }) => {
+  const { createPage } = actions
 
   return new Promise((resolve, reject) => {
-    const Project = path.resolve('./src/templates/Project.js')
+    const Project = path.resolve('./src/templates/projectDetail/index.tsx')
     resolve(
       graphql(
         `
           {
-            allContentfulProject(limit: 100) {
+            allContentfulProject(limit: 10) {
               edges {
                 node {
                   slug
