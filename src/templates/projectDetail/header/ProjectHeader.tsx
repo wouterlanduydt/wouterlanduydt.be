@@ -19,15 +19,15 @@ type TProps = {
   title: string
   subtitle: string
   date: Date
-  teamMembers: Array<string>
+  teamMembers: string[]
   client: string
-  tags: Array<string>
+  tags: string[]
 }
 
 const ProjectHeader = (props: TProps) => {
   const { title, subtitle, date, teamMembers, client, tags } = props
 
-  const getTagsItems = (tags: Array<string>) =>
+  const getTagsItems = (tags: string[]) =>
     tags.map((tag, index) => (
       <StatContentLi
         className="tag"
@@ -48,17 +48,16 @@ const ProjectHeader = (props: TProps) => {
           <PublishedDate>- {format(date, 'MMM YYYY')}</PublishedDate>
         </SubtitleWrapper>
         <StatsList>
-          {teamMembers &&
-            teamMembers.length > 1 && (
-              <Stat>
-                <StatTitle>Team</StatTitle>
-                <ul>
-                  {teamMembers.sort().map(member => (
-                    <StatContentLi key={member}>{member}</StatContentLi>
-                  ))}
-                </ul>
-              </Stat>
-            )}
+          {teamMembers && teamMembers.length > 1 && (
+            <Stat>
+              <StatTitle>Team</StatTitle>
+              <ul>
+                {teamMembers.sort().map(member => (
+                  <StatContentLi key={member}>{member}</StatContentLi>
+                ))}
+              </ul>
+            </Stat>
+          )}
           <Stat>
             <StatTitle>Category</StatTitle>
             <TagsList>{getTagsItems(tags)}</TagsList>

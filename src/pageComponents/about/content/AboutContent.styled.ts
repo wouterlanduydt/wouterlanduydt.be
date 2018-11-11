@@ -18,7 +18,8 @@ export const Title = styled.h2`
 `
 
 export const Intro = styled.div`
-  p:not(:last-child) {
+  p:not(:last-child),
+  ul {
     margin-bottom: 22px;
   }
 
@@ -26,6 +27,17 @@ export const Intro = styled.div`
     color: ${props => props.theme.palette.dark};
     text-decoration: underline;
     font-weight: ${props => props.theme.fontWeights.bold};
+  }
+
+  li {
+    font-size: 1.8em;
+    line-height: 1.2em;
+    margin-left: 32px;
+    list-style-type: disc;
+
+    &:not(:last-child) {
+      margin-bottom: 4px;
+    }
   }
 `
 

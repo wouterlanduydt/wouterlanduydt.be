@@ -7,9 +7,10 @@ import {
   TagsList,
   TagItem,
 } from './ProjectPreview.styled'
+import { TProjectNode } from '../../../../config/types'
 
 type TProps = {
-  project: any
+  project: TProjectNode
 }
 
 const ProjectPreview = (props: TProps) => {
