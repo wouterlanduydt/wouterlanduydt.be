@@ -13,8 +13,8 @@ import {
 type TProps = {
   aboutTitle: string
   aboutText: any
-  iKnow: Array<string>
-  iLove: Array<string>
+  iKnow: string[]
+  iLove: string[]
   resume: any
   email: string
 }

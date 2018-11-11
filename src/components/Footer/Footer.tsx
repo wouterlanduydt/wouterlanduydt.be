@@ -3,11 +3,7 @@ import { Wrapper, SocialsList, SocialItem, SocialIcon } from './Footer.styled'
 import { StaticQuery, graphql } from 'gatsby'
 import getSocialsList from '../../utils/getSocialsList'
 
-type TProps = {
-  data?: any
-}
-
-const Footer = (props: TProps) => (
+const Footer = () => (
   <StaticQuery
     query={graphql`
       query FooterQuery {

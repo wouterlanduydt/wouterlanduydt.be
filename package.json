@@ -9,6 +9,7 @@
     "date-fns": "^1.29.0",
     "dotenv": "^6.0.0",
     "gatsby": "^2.0.0",
+    "gatsby-link": "^2.0.6",
     "gatsby-plugin-manifest": "^2.0.2",
     "gatsby-plugin-offline": "^2.0.5",
     "gatsby-plugin-react-helmet": "^3.0.0",
@@ -32,7 +33,9 @@
   "scripts": {
     "build": "gatsby build",
     "start": "gatsby develop",
-    "format": "prettier --write '**/*.tsx'"
+    "lint": "tslint --project .",
+    "lint:fix": "yarn lint --fix",
+    "prettier": "prettier 'src/**/*.{ts,tsx}' --write"
   },
   "devDependencies": {
     "@types/date-fns": "^2.6.0",
@@ -41,7 +44,7 @@
     "gatsby-plugin-google-fonts": "^0.0.4",
     "gatsby-plugin-root-import": "^2.0.4",
     "gatsby-plugin-styled-components": "^3.0.1",
-    "prettier": "^1.14.2",
+    "prettier": "^1.15.2",
     "tslint-config-prettier": "^1.15.0",
     "tslint-react": "^3.6.0"
   },

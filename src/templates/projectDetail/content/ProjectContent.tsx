@@ -10,7 +10,7 @@ import {
 
 type TProps = {
   description: any
-  images: Array<any>
+  images: any[]
   projectVideo: string
   link: string
 }

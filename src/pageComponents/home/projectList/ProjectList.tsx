@@ -1,9 +1,10 @@
 import React from 'react'
 import Preview from './preview'
 import { Wrapper, List, ProjectWrapper } from './ProjectList.styled'
+import { TProject } from '../../../config/types'
 
 type TProps = {
-  projects: Array<any>
+  projects: TProject[]
 }
 
 const ProjectList = (props: TProps) => {
