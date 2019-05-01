@@ -1,9 +1,6 @@
 export default (
   linkedInLink: string,
   githubLink: string,
-  vimeoLink: string,
-  instagramLink: string,
-  twitterLink: string,
   spotifyLink: string,
   mail: string
 ) => [
@@ -22,21 +19,6 @@ export default (
   {
     link: githubLink,
     name: 'github',
-  },
-
-  {
-    link: vimeoLink,
-    name: 'vimeo',
-  },
-
-  {
-    link: instagramLink,
-    name: 'instagram',
-  },
-
-  {
-    link: twitterLink,
-    name: 'twitter',
   },
 
   {

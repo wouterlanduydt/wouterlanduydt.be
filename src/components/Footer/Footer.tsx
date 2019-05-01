@@ -12,9 +12,6 @@ const Footer = () => (
             node {
               linkedInLink
               githubLink
-              vimeoLink
-              instagramLink
-              twitterLink
               spotifyLink
             }
           }
@@ -30,21 +27,11 @@ const Footer = () => (
       const about = data.allContentfulAbout.edges[0].node
       const email = data.site.siteMetadata.email
 
-      const {
-        linkedInLink,
-        githubLink,
-        vimeoLink,
-        instagramLink,
-        twitterLink,
-        spotifyLink,
-      } = about
+      const { linkedInLink, githubLink, spotifyLink } = about
 
       const socialsList = getSocialsList(
         linkedInLink,
         githubLink,
-        vimeoLink,
-        instagramLink,
-        twitterLink,
         spotifyLink,
         email
       )
@@ -53,7 +40,7 @@ const Footer = () => (
         <Wrapper>
           <SocialsList>
             {socialsList.map(socialItem => (
-              <SocialItem key={socialItem.name} className="social-item">
+              <SocialItem key={socialItem.name} className="social-item-li">
                 <a
                   href={socialItem.link}
                   target={socialItem.target || '_blank'}

@@ -10,12 +10,12 @@ export const SocialsList = styled.ol`
   align-items: center;
   justify-content: center;
 
-  &:hover .social-item {
+  &:hover .social-item-li {
     transition: opacity 200ms;
     opacity: 0.2;
   }
 
-  .social-item:hover {
+  .social-item-li:hover {
     transition: opacity 200ms;
     opacity: 1;
   }
