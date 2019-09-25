@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i&display=swap");
+
+html {
+  font-family: "IBM Plex Sans", Helvetica, sans-serif;
+}
+
+a {
+  letter-spacing: 0.04px;
+  color: blue;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  font-style: italic;
+}
+
+a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
