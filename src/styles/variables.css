@@ -1,0 +1,10 @@
+:root {
+  --xs: 2px;
+  --s: 4px;
+  --m: 8px;
+  --l: 16px;
+  --xl: 32px;
+
+  --c-dark: #0c0c0c;
+  --c-light: #f6f6f6;
+}
