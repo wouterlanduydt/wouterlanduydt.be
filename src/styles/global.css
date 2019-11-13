@@ -19,6 +19,10 @@ body {
   background: var(--c-dark);
 }
 
+a {
+  color: var(--c-dark);
+}
+
 main {
   margin: 0 auto;
   width: 90vw;
@@ -118,6 +122,10 @@ h2 {
 @media (prefers-color-scheme: dark) {
   body {
     background-color: var(--c-dark);
+    color: var(--c-light);
+  }
+
+  a {
     color: var(--c-light);
   }
 
