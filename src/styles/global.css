@@ -78,7 +78,7 @@ h2 {
 }
 
 .icon-list li:not(:last-child) {
-  margin-right: var(--l);
+  margin-right: 24px;
 }
 
 @media (min-width: 420px) {
