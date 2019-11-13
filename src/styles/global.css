@@ -9,18 +9,18 @@ html {
 
 body {
   font-size: 1.6rem;
-  background-color: var(--c-light);
-  color: var(--c-dark);
+  background-color: var(--c-dark);
+  color: var(--c-light);
   line-height: 1.3;
 }
 
 ::selection {
-  color: var(--c-light);
-  background: var(--c-dark);
+  color: var(--c-dark);
+  background: var(--c-light);
 }
 
 a {
-  color: var(--c-dark);
+  color: var(--c-light);
 }
 
 main {
@@ -58,14 +58,19 @@ h2 {
   margin-bottom: var(--xl);
 }
 
-.content p:not(:last-child) {
-  margin-bottom: var(--l);
+.content p {
+  width: 100%;
 }
 
 .content p:first-child {
   font-size: 2.6rem;
   font-weight: 700;
   margin-bottom: var(--xl);
+  width: 100%;
+}
+
+.content p:not(:last-child) {
+  margin-bottom: var(--l);
 }
 
 .icon-list {
@@ -74,7 +79,7 @@ h2 {
 }
 
 .icon-list svg path {
-  fill: var(--c-dark);
+  fill: var(--c-light);
 }
 
 .icon-list li:not(:last-child) {
@@ -114,27 +119,31 @@ h2 {
     font-size: 2rem;
   }
 
+  .content p {
+    width: 90%;
+  }
+
   .content p:first-child {
     font-size: 2.8rem;
   }
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   body {
-    background-color: var(--c-dark);
-    color: var(--c-light);
+    background-color: var(--c-light);
+    color: var(--c-dark);
   }
 
   a {
-    color: var(--c-light);
+    color: var(--c-dark);
   }
 
   ::selection {
-    color: var(--c-dark);
-    background: var(--c-light);
+    color: var(--c-light);
+    background: var(--c-dark);
   }
 
   .icon-list svg path {
-    fill: var(--c-light);
+    fill: var(--c-dark);
   }
 }
