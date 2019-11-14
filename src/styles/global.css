@@ -25,8 +25,9 @@ a {
 
 main {
   margin: 0 auto;
-  width: 90vw;
+  width: 94vw;
   max-width: 960px;
+  margin-bottom: var(--xl);
 }
 
 main:before {
@@ -68,7 +69,7 @@ h2 {
 }
 
 .content p:first-child {
-  font-size: 2.6rem;
+  font-size: 2.4rem;
   font-weight: 700;
   margin-bottom: var(--xl);
   width: 100%;
@@ -91,7 +92,7 @@ h2 {
   margin-right: 24px;
 }
 
-@media (min-width: 420px) {
+@media (min-width: 520px) {
   .header-wrap {
     flex-direction: row;
     align-items: center;
@@ -100,9 +101,17 @@ h2 {
   header {
     margin-left: var(--l);
   }
+
+  .content p:first-child {
+    font-size: 2.6rem;
+  }
 }
 
 @media (min-width: 640px) {
+  main {
+    width: 90vw;
+  }
+
   h1 {
     font-size: 3rem;
   }
