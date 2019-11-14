@@ -20,7 +20,13 @@ const IndexPage = ({ data }) => {
       </Helmet>
       <SEO />
       <div className="header-wrap">
-        <img src={memoji} height={86} width={64} draggable={false} />
+        <img
+          src={memoji}
+          alt="Memoji"
+          height={86}
+          width={64}
+          draggable={false}
+        />
         <header>
           <h1>{frontmatter.title}</h1>
           <h2>{frontmatter.subtitle}</h2>

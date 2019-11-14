@@ -27,8 +27,13 @@ main {
   margin: 0 auto;
   width: 90vw;
   max-width: 960px;
-  margin-top: 10vw;
-  margin-bottom: var(--xl);
+}
+
+main:before {
+  content: "";
+  height: 12vw;
+  max-height: 180px;
+  display: inline-block;
 }
 
 .header-wrap {
@@ -98,15 +103,6 @@ h2 {
 }
 
 @media (min-width: 640px) {
-  main {
-    position: fixed;
-    top: 48%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
   h1 {
     font-size: 3rem;
   }
