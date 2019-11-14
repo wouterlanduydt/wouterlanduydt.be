@@ -75,6 +75,11 @@ h2 {
   width: 100%;
 }
 
+.content p:first-child a:hover {
+  color: var(--c-dark);
+  -webkit-text-stroke: 1px var(--c-light);
+}
+
 .content p:not(:last-child) {
   margin-bottom: var(--l);
 }
