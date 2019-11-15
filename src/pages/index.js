@@ -19,12 +19,12 @@ const IndexPage = ({ data }) => {
   const windowHeight = useWindowHeight()
 
   const MINIMAL_PADDING = 64
-  const doesntFit = contentHeight + MINIMAL_PADDING > windowHeight
+  const perfectFit = contentHeight + MINIMAL_PADDING < windowHeight
 
   return (
     <Measure bounds onResize={({ bounds }) => setContentHeight(bounds.height)}>
       {({ measureRef }) => (
-        <main ref={measureRef} className={doesntFit ? "no-center" : "center"}>
+        <main ref={measureRef} className={perfectFit ? "center" : "no-center"}>
           <Helmet>
             <base target="_blank" href="*" />
           </Helmet>
