@@ -1,6 +1,6 @@
 import React from "react"
 
-const getWindowHeight = () => !!window && window.innerHeight
+const getWindowHeight = () => window !== "undefined" && window.innerHeight
 
 export const useWindowHeight = () => {
   const [windowHeight, setWindowHeight] = React.useState(getWindowHeight())
