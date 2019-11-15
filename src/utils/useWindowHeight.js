@@ -1,12 +1,13 @@
 import React from "react"
 
-const getWindowHeight = () =>
-  typeof window !== "undefined" && window.innerHeight
+const getWindowHeight = () => window.innerHeight
 
 export const useWindowHeight = () => {
-  const [windowHeight, setWindowHeight] = React.useState(getWindowHeight())
+  const [windowHeight, setWindowHeight] = React.useState(-1)
 
   React.useEffect(() => {
+    setWindowHeight(getWindowHeight())
+
     const handleResize = () => setWindowHeight(getWindowHeight())
     window.addEventListener("resize", handleResize)
 
