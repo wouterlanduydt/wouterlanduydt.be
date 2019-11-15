@@ -152,6 +152,11 @@ h2 {
     color: var(--c-dark);
   }
 
+  .content p:first-child a:hover {
+    color: var(--c-light);
+    -webkit-text-stroke: 1px var(--c-dark);
+  }
+
   ::selection {
     color: var(--c-light);
     background: var(--c-dark);
