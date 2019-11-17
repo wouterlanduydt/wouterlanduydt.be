@@ -15,7 +15,7 @@ I studied [Devine][devine] in Kortrijk. Some of my school projects include a [Ki
 
 TypeScript, React (Native), Redux, Electron, Storybook and Gatsby are some technologies I'm most comfortable with. I also have experience creating designs in Sketch and most Adobe CC software.
 
-Since I love both music & data I made [Spotifest][spotifest], a web app that generates a festival poster with your favourite artists. I've also made some static sites for Unifac, [Students on Stage][sos] and [Calamartes][cala].
+Since I love both music & data I made [Spotifest][spotifest], a web app that generates a festival poster with your favorite artists. I've also made some static sites for Unifac, [Students on Stage][sos] and [Calamartes][cala].
 
 In my free time I like going to concerts, cycling and being a full-time Apple fanboy.
 
