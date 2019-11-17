@@ -107,6 +107,12 @@ h2 {
   fill: var(--c-light);
 }
 
+.icon-list li:hover {
+  transition: all 140ms ease-in;
+  transform: scale(0.95);
+  opacity: 0.9;
+}
+
 .icon-list li:not(:last-child) {
   margin-right: 24px;
 }
