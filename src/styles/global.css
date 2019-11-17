@@ -26,7 +26,7 @@ a {
 main {
   margin: 0 auto;
   width: 94vw;
-  max-width: 960px;
+  max-width: 1000px;
   margin-bottom: var(--xl);
 }
 
@@ -86,6 +86,16 @@ h2 {
 
 .content p:not(:last-child) {
   margin-bottom: var(--l);
+}
+
+.content a:hover {
+  text-decoration: none;
+
+  /* hover effect stolen from https://theoutline.com/svg/sq/h?a=4&f=4&anim=true&c=000000 */
+  background-position: 0 calc(100% - 1.5px);
+  background-size: auto 3px;
+  background-repeat: repeat-x;
+  background-image: url("../assets/svg/link-line-light.svg");
 }
 
 .icon-list {
@@ -155,6 +165,10 @@ h2 {
   .content p:first-child a:hover {
     color: var(--c-light);
     -webkit-text-stroke: 1px var(--c-dark);
+  }
+
+  .content a:hover {
+    background-image: url("../assets/svg/link-line-light.svg");
   }
 
   ::selection {
