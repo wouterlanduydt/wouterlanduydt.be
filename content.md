@@ -9,11 +9,11 @@ linkedin: https://www.linkedin.com/in/wouter-landuydt
 mail: mailto:wouter.landuydt@gmail.com
 ---
 
-Front-End Developer getting excited about great design. Loves crafting web applications with accessiblity, performance & user experience in mind. Currently building stuff at [Spencer][spencer] - the employee companion.
+Front-End Developer that gets excited about great design. Loves crafting web applications with accessiblity, performance & user experience in mind. Currently building stuff at [Spencer][spencer] - the employee companion.
 
-I studied [Devine][devine] in Kortrijk. Some of my school projects include a [Kickstarter 2D animation][off-assignment], an [interactive garden for JEF Festival][jef] , a [React app for MSK Ghent][msk] and a [VJ app combining Web MIDI, Web Audio and three.js][vj]. As cherry on top I did my [internship at November Five][n5].
+I studied [Devine][devine] in Kortrijk. Some of my school projects include a [Kickstarter 2D explainer][off-assignment], an [interactive garden for a film festival][jef] , a [React app for MSK Ghent][msk] and a [VJ app combining Web MIDI, Web Audio and three.js][vj]. As cherry on top I did my [internship at November Five][n5].
 
-TypeScript, React (Native), Redux, Electron, Storybook and Gatsby are some technologies I'm most comfortable with. I also have experience creating designs in Sketch and most Adobe CC software.
+TypeScript, React (Native), Redux, Electron, Storybook and Gatsby are some technologies I'm most comfortable with atm. I enjoy bringing UI's to life using code.
 
 Since I love both music & data I made [Spotifest][spotifest], a web app that generates a festival poster with your favorite artists. I've also made some static sites for Unifac, [Students on Stage][sos] and [Calamartes][cala].
 
