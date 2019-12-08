@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Wouter Landuydt`,
-    description: `Portfolio`,
-    author: `@wouterlanduydt`,
+    description: `Portfolio of Wouter Landuydt, Front-End Developer that gets excited about great design. Loves crafting web applications with accessiblity, performance & user experience in mind.`,
+    author: `wouter.landuydt@gmail.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
