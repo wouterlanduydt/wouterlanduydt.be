@@ -37,7 +37,7 @@ const IndexPage = ({ data }) => {
           <div className="header-wrap">
             <Img
               fixed={data.file.childImageSharp.fixed}
-              durationFadeIn={200}
+              durationFadeIn={100}
               onLoad={() => setVisualLoaded(true)}
               alt=""
             />

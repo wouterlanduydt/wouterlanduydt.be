@@ -28,7 +28,7 @@ main {
   width: 94vw;
   max-width: 1000px;
   margin-bottom: var(--xl);
-  transition: opacity 200ms;
+  transition: opacity 100ms;
 }
 
 main.no-center {
