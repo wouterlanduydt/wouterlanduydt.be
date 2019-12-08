@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,700&display=swap");
+@import "./variables.css";
+
+html {
+  font-family: "IBM Plex Sans", Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--c-dark);
+  color: var(--c-light);
+  line-height: 1.3;
+}
+
+::selection {
+  color: var(--c-dark);
+  background: var(--c-light);
+}
+
+a {
+  color: var(--c-light);
+}
+
+main {
+  margin: 0 auto;
+  width: 94vw;
+  max-width: 1000px;
+  margin-bottom: var(--xl);
+  transition: opacity 200ms;
+}
+
+main.no-center {
+  margin-top: var(--xl);
+}
+
+main.center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: var(--xl);
+}
+
+header {
+  margin-top: var(--l);
+  margin-left: 0;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin-bottom: var(--xs);
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+.content {
+  font-size: 1.8rem;
+  margin-bottom: var(--xl);
+}
+
+.content p {
+  width: 100%;
+}
+
+.content p:first-child {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: var(--xl);
+  width: 100%;
+}
+
+.content p:first-child a:hover {
+  color: var(--c-dark);
+  -webkit-text-stroke: 1px var(--c-light);
+}
+
+.content p:not(:last-child) {
+  margin-bottom: var(--l);
+}
+
+.content a:hover {
+  text-decoration: none;
+
+  /* hover effect stolen from https://theoutline.com/svg/sq/h?a=4&f=4&anim=true&c=000000 */
+  background-position: 0 calc(100% - 1.5px);
+  background-size: auto 3px;
+  background-repeat: repeat-x;
+  background-image: url("../assets/svg/link-line-light.svg");
+}
+
+.icon-list {
+  display: flex;
+  align-items: center;
+}
+
+.icon-list svg path {
+  fill: var(--c-light);
+}
+
+.icon-list li:hover {
+  transition: all 140ms ease-in;
+  transform: scale(0.95);
+  opacity: 0.9;
+}
+
+.icon-list li:not(:last-child) {
+  margin-right: 24px;
+}
+
+@media (min-width: 520px) {
+  .header-wrap {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  header {
+    margin-left: var(--l);
+  }
+
+  .content p:first-child {
+    font-size: 2.6rem;
+  }
+}
+
+@media (min-width: 640px) {
+  main {
+    width: 90vw;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  .content {
+    font-size: 2rem;
+  }
+
+  .content p {
+    width: 90%;
+  }
+
+  .content p:first-child {
+    font-size: 2.8rem;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: var(--c-light);
+    color: var(--c-dark);
+  }
+
+  a {
+    color: var(--c-dark);
+  }
+
+  .content p:first-child a:hover {
+    color: var(--c-light);
+    -webkit-text-stroke: 1px var(--c-dark);
+  }
+
+  .content a:hover {
+    background-image: url("../assets/svg/link-line-light.svg");
+  }
+
+  ::selection {
+    color: var(--c-light);
+    background: var(--c-dark);
+  }
+
+  .icon-list svg path {
+    fill: var(--c-dark);
+  }
+}

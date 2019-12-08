@@ -1,70 +1,47 @@
-if (process.env.ENVIROMENT !== 'production') {
-  require('dotenv').config()
-}
-
-const contentfulConfig = {
-  spaceId: process.env.CONTENTFUL_SPACE_ID,
-  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-}
-
 module.exports = {
   siteMetadata: {
     title: `Wouter Landuydt`,
-    email: `wouter.landuydt@gmail.com`,
-    author: 'Wouter Landuydt <wouter.landuydt@gmail.com>',
-    description:
-      'Portfolio of Wouter Landuydt. Devine 2018 graduate. Front-end developer with eye for design.',
-    coverImage:
-      'https://images.ctfassets.net/9ivj8jmhqi2h/6BDeJkiPvimq4qoUqYAAOS/f201b9c16891cd6b971d977b8ce51e21/sos_01.jpg',
-    url: 'https://www.wouterlanduydt.be',
-    keywords: 'portfolio, devine, front-end, developer, designer, antwerp',
+    description: `Portfolio of Wouter Landuydt, Front-End Developer that gets excited about great design. Loves crafting web applications with accessiblity, performance & user experience in mind.`,
+    author: `wouter.landuydt@gmail.com`,
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-styled-components',
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/assets/img`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}`,
+      },
+    },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Wouter Landuydt',
-        short_name: 'Wouter',
-        start_url: '/',
-        background_color: '#000000',
-        theme_color: '#ffffff',
-        display: 'minimal-ui',
-        icon: 'src/assets/icon.png',
+        name: `gatsby-starter-default`,
+        short_name: `starter`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#000000`,
+        display: `minimal-ui`,
+        icon: `src/assets/img/memoji.png`, // This path is relative to the root of the site.
       },
     },
-    'gatsby-plugin-offline',
-    `gatsby-plugin-typescript`,
-    'gatsby-transformer-remark',
-    'gatsby-plugin-sharp',
     {
-      resolve: `gatsby-source-contentful`,
-      options: contentfulConfig,
-    },
-    {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: "gatsby-transformer-remark",
       options: {
-        fonts: [`merriweather`, `open sans`],
+        plugins: [],
       },
     },
-    {
-      resolve: `gatsby-plugin-favicon`,
-      options: {
-        logo: './src/assets/favicon.png',
-        injectHTML: true,
-        icons: {
-          android: true,
-          appleIcon: true,
-          appleStartup: true,
-          coast: false,
-          favicons: true,
-          firefox: true,
-          twitter: false,
-          yandex: false,
-          windows: true,
-        },
-      },
-    },
+    // this (optional) plugin enables Progressive Web App + Offline functionality
+    // To learn more, visit: https://gatsby.dev/offline
+    // `gatsby-plugin-offline`,
   ],
 }
