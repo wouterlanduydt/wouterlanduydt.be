@@ -16,6 +16,7 @@ const IndexPage = ({ data }) => {
   const { frontmatter, html } = markdownRemark
 
   const [contentHeight, setContentHeight] = React.useState(-1)
+  const [visualLoaded, setVisualLoaded] = React.useState(false)
   const windowHeight = useWindowHeight()
 
   const MINIMAL_PADDING = 64
@@ -24,13 +25,22 @@ const IndexPage = ({ data }) => {
   return (
     <Measure bounds onResize={({ bounds }) => setContentHeight(bounds.height)}>
       {({ measureRef }) => (
-        <main ref={measureRef} className={perfectFit ? "center" : "no-center"}>
+        <main
+          ref={measureRef}
+          style={{ opacity: visualLoaded ? 1 : 0 }}
+          className={perfectFit ? "center" : "no-center"}
+        >
           <Helmet>
             <base target="_blank" href="*" />
           </Helmet>
           <SEO />
           <div className="header-wrap">
-            <Img fixed={data.file.childImageSharp.fixed} alt="memoji" />
+            <Img
+              fixed={data.file.childImageSharp.fixed}
+              durationFadeIn={200}
+              onLoad={() => setVisualLoaded(true)}
+              alt=""
+            />
 
             <header>
               <h1>{frontmatter.title}</h1>
@@ -76,8 +86,8 @@ export const pageQuery = graphql`
 
     file(name: { eq: "memoji" }) {
       childImageSharp {
-        fixed(width: 64, height: 86, traceSVG: { color: "#bb9c84" }) {
-          ...GatsbyImageSharpFixed_withWebp_tracedSVG
+        fixed(width: 64, height: 86) {
+          ...GatsbyImageSharpFixed_withWebp_noBase64
         }
       }
     }
