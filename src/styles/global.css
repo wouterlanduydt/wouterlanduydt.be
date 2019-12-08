@@ -175,7 +175,7 @@ h2 {
   }
 
   .content a:hover {
-    background-image: url("../assets/svg/link-line-light.svg");
+    background-image: url("../assets/svg/link-line-dark.svg");
   }
 
   ::selection {
