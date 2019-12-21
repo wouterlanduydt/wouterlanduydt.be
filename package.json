@@ -2,7 +2,7 @@
   "name": "wouterlanduydt.be",
   "private": true,
   "description": "Portfolio",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Wouter Landuydt <wouter.landuydt@gmail.com>",
   "dependencies": {
     "gatsby": "^2.15.22",
@@ -24,7 +24,8 @@
     "@commitlint/cli": "^8.2.0",
     "@commitlint/config-conventional": "^8.2.0",
     "husky": "^3.1.0",
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+    "standard-version": "^7.0.1"
   },
   "keywords": [
     "gatsby"
@@ -40,7 +41,8 @@
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "release": "standard-version"
   },
   "repository": {
     "type": "git",
