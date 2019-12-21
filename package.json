@@ -2,7 +2,7 @@
   "name": "wouterlanduydt.be",
   "private": true,
   "description": "Portfolio",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Wouter Landuydt <wouter.landuydt@gmail.com>",
   "dependencies": {
     "gatsby": "^2.15.22",
