@@ -9,7 +9,7 @@ linkedin: https://www.linkedin.com/in/wouter-landuydt
 mail: mailto:wouter.landuydt@gmail.com
 ---
 
-Front-End Developer that gets excited about great design. Loves crafting web applications with accessiblity, performance & user experience in mind. Currently building stuff at [Spencer][spencer] - an Employee Communications Platform.
+Front-End Developer that gets excited about great design. Loves crafting web applications with accessiblity, performance & user experience in mind. Currently building stuff at [Spencer][spencer] - the Employee Communications Platform.
 
 I studied [Devine][devine] in Kortrijk. Some of my school projects include a [Kickstarter 2D explainer][off-assignment], an [interactive garden for a film festival][jef] , a [React app for MSK Ghent][msk] and a [VJ app combining Web MIDI, Web Audio and three.js][vj]. As cherry on top I did my [internship at November Five][n5].
 
