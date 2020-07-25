@@ -3,6 +3,7 @@ module.exports = {
     title: `Wouter Landuydt`,
     description: `Portfolio of Wouter Landuydt, Front-End Developer that gets excited about great design. Loves crafting web applications with accessiblity, performance & user experience in mind.`,
     author: `wouter.landuydt@gmail.com`,
+    siteUrl: "https://wouterlanduydt.be"
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -10,7 +11,6 @@ module.exports = {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: 'https://wouterlanduydt.be',
-        siteUrl: 'https://wouterlanduydt.be',
         policy: [{ userAgent: '*', disallow: ['/wishlist'] }]
       }
     },
