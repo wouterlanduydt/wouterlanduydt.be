@@ -99,6 +99,19 @@ h2 {
   background-image: url("../assets/svg/link-line-light.svg");
 }
 
+.text-small {
+  font-size: 1.4rem;
+}
+
+ul {
+  list-style-type: circle;
+  margin-left: var(--xl);
+}
+
+ul > li:not(:last-child) {
+  margin-bottom: var(--m);
+}
+
 .icon-list {
   display: flex;
   align-items: center;
