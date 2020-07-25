@@ -10,6 +10,7 @@ module.exports = {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: 'https://wouterlanduydt.be',
+        siteUrl: 'https://wouterlanduydt.be',
         policy: [{ userAgent: '*', disallow: ['/wishlist'] }]
       }
     },
