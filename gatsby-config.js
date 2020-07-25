@@ -7,6 +7,13 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://wouterlanduydt.be',
+        policy: [{ userAgent: '*', disallow: ['/wishlist'] }]
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
