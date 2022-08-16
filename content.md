@@ -9,7 +9,7 @@ linkedin: https://www.linkedin.com/in/wouter-landuydt
 mail: mailto:wouter.landuydt@gmail.com
 ---
 
-Front-End Developer that gets excited about great design. Loves crafting web applications with accessibility, performance & user experience in mind. Currently building stuff at [Spencer][spencer] - the Employee Communications Platform.
+Front-End Developer that gets excited about great design. Loves crafting web applications with accessibility, performance & user experience in mind. Currently building stuff at [icapps][icapps].
 
 I studied [Devine][devine] in Kortrijk. Some of my school projects include a [Kickstarter 2D explainer][off-assignment], an [interactive garden for a film festival][jef] , a [React app for MSK Ghent][msk] and a [VJ app combining Web MIDI, Web Audio and three.js][vj]. As cherry on top I did my [internship at November Five][n5].
 
@@ -19,7 +19,7 @@ Since I love both music & data I made [Spotifest][spotifest], a web app that gen
 
 In my free time I like going to concerts, cycling and being a full-time Apple fanboy.
 
-[spencer]: https://spencer.co
+[icapps]: https://icapps.com/
 [devine]: https://www.howest.be/en/programmes/bachelor/devine
 [off-assignment]: https://vimeo.com/234110391
 [msk]: https://dry-garden-69599.herokuapp.com
